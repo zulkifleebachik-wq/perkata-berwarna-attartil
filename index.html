@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perkata Berwarna · AtTartil</title>
+<meta name="description" content="Nota perkata berwarna al-Qur'an (isim, fi'il, harf) dengan fā'il setiap fi'il — AtTartil Quranic Institute.">
+<link rel="icon" href="assets/attartil-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Marcellus&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#0F1A0C;--card:#16250F;--line:#2C4220;--ink:#F3EFE0;--muted:#B9C2A8;--gold:#E8C547;--isim:#7BE05A;--fiil:#FFD83D;--harf:#FF6B6B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.55}
+.sr{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.le{display:none} #lg-en:checked ~ * .le{display:inline} #lg-en:checked ~ * .lm{display:none}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header{padding:36px 0 10px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+header img{width:72px;height:72px;border-radius:50%}
+h1{font-family:'Marcellus',serif;font-weight:400;font-size:34px;line-height:1.15}
+.sub{color:var(--muted);font-size:15px}
+.lang{display:inline-flex;border:1px solid var(--gold);border-radius:999px;overflow:hidden;margin-left:auto}
+.lang label{color:var(--gold);font-weight:800;padding:4px 14px;cursor:pointer}
+#lg-ms:checked ~ * label[for=lg-ms],#lg-en:checked ~ * label[for=lg-en]{background:var(--gold);color:#1a1a1a}
+.key{display:flex;flex-wrap:wrap;gap:8px 20px;margin:18px 0 6px;font-weight:700;font-size:15px}
+.key i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px}
+.k1{color:var(--isim)} .k1 i{background:var(--isim)} .k2{color:var(--fiil)} .k2 i{background:var(--fiil)} .k3{color:var(--harf)} .k3 i{background:var(--harf)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:22px 0 30px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:border-color .2s,transform .2s}
+a.card:hover,a.card:focus-visible{border-color:var(--gold);transform:translateY(-2px);outline:none}
+.ar{font-family:'Amiri Quran',serif;font-size:40px;line-height:1.8;direction:rtl;text-align:right}
+.ar .n{color:var(--isim)} .ar .v{color:var(--fiil)} .ar .p{color:var(--harf)} .ar .m{color:#E8E3D0}
+.card h2{font-family:'Marcellus',serif;font-weight:400;font-size:24px;margin-top:4px}
+.card p{color:var(--muted);font-size:14.5px;margin-top:4px}
+.go{display:inline-block;margin-top:12px;color:var(--gold);font-weight:800}
+.note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--muted);font-size:14px}
+.note b{color:var(--ink)}
+footer{padding:28px 0 40px;color:var(--muted);font-size:13px}
+.nw{white-space:nowrap}
+</style>
+</head>
+<body>
+<input type="radio" name="lg" id="lg-ms" class="sr" checked aria-label="Bahasa Melayu"><input type="radio" name="lg" id="lg-en" class="sr" aria-label="English">
+<div class="wrap">
+<header>
+<img src="assets/attartil-logo.webp" alt="Logo AtTartil Quranic Institute">
+<div><h1><span class="lm">Perkata Berwarna</span><span class="le">Colour-Coded Word by Word</span></h1>
+<p class="sub">AtTartil Quranic Institute · <span class="lm">Nota kefahaman bahasa <span class="nw">al-Qur'an</span></span><span class="le">Qur'anic language notes</span></p></div>
+<span class="lang" aria-label="Bahasa / Language"><label for="lg-ms">BM</label><label for="lg-en">EN</label></span>
+</header>
+<div class="key"><span class="k1"><i></i>Isim <span class="lm">(kata nama)</span><span class="le">(noun)</span></span><span class="k2"><i></i>Fiʿil <span class="lm">(kata kerja)</span><span class="le">(verb)</span></span><span class="k3"><i></i>Ḥarf <span class="lm">(kata sendi/partikel)</span><span class="le">(particle)</span></span></div>
+<main>
+<div class="grid">
+<a class="card" href="yasin/">
+<p class="ar"><span class="m">يسٓ</span> <span class="p">وَٱلْ</span><span class="n">قُرْءَانِ</span></p>
+<h2>Surah Yasin</h2>
+<p><span class="lm">Surah ke-36 · 83 ayat · 725 kalimah · 189 fiʿil</span><span class="le">Surah 36 · 83 verses · 725 words · 189 verbs</span></p>
+<span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
+</a>
+<a class="card" href="al-mulk/">
+<p class="ar"><span class="v">تَبَٰرَكَ</span> <span class="n">ٱلَّذِى</span> <span class="p">بِ</span><span class="n">يَدِهِ</span></p>
+<h2>Surah <span class="nw">al-Mulk</span></h2>
+<p><span class="lm">Surah ke-67 · 30 ayat · 333 kalimah · 87 fiʿil</span><span class="le">Surah 67 · 30 verses · 333 words · 87 verbs</span></p>
+<span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
+</a>
+</div>
+<div class="note"><span class="lm"><b>Ciri nota:</b> setiap kalimah diwarnakan mengikut jenisnya; makna perkata BM/EN; akar kata; dan kurungan <b>fāʿil</b> (pelaku) bagi setiap fiʿil — <span style="color:#6FD8F0">NF</span> = nāʾib fāʿil (pengganti pelaku), <i>ism</i> = ism kāna (subjek kata kerja nāqiṣ). Fāʿil dirujuk kepada <i>Iʿrāb <span class="nw">al-Qur'ān</span> <span class="nw">al-Karīm</span></i>, Dār <span class="nw">al-Ṣaḥābah</span> (Maktabah Shamela) dan disemak ATV. Terjemahan ayat: Tafsir Pimpinan <span class="nw">ar-Rahman</span> (Basmeih) · Pickthall (1930).</span><span class="le"><b>Features:</b> every word coloured by type; BM/EN word meanings; root letters; and a <b>fāʿil</b> (doer) bracket for every verb — <span style="color:#6FD8F0">NF</span> = nāʾib fāʿil (deputy doer), <i>ism</i> = subject of kāna. Fāʿil per <i>Iʿrāb <span class="nw">al-Qur'ān</span> <span class="nw">al-Karīm</span></i>, Dār <span class="nw">al-Ṣaḥābah</span> (Maktabah Shamela), checked by ATV. Verse translations: Basmeih (Malay) · Pickthall (1930).</span></div>
+</main>
+<footer>“Where Qur’anic Knowledge Transforms Lives.” · <a href="https://www.attartilqi.com" style="color:var(--gold)">www.attartilqi.com</a></footer>
+</div>
+</body>
+</html>
