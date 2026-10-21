@@ -5,6 +5,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `index.html` — home page
 - `al-fatihah/` — Surah al-Fatihah (7 ayat)
 - `al-baqarah/` — Surah al-Baqarah (ayat 1–5)
+- `al-kahfi/` — Surah al-Kahfi (ayat 1–26)
 - `yasin/` — Surah Yasin (83 ayat)
 - `al-mulk/` — Surah al-Mulk (30 ayat)
 - `at-takathur/` … `al-masad/` — Surah 102–111 (at-Takathur, al-‘Asr, al-Humazah, al-Fil, Quraisy, al-Ma‘un, al-Kauthar, al-Kafirun, an-Nasr, al-Masad)
