@@ -8,6 +8,6 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 
 Static site, no build step. Every push to `main` deploys on Vercel.
 Fā'il per *I'rāb al-Qur'ān al-Karīm*, Dār al-Ṣaḥābah (Maktabah Shamela); checked by ATV.
-Verse translations: Tafsir Pimpinan ar-Rahman (Basmeih) and M. M. Pickthall (1930).
+Verse translations: Tafsir Pimpinan ar-Rahman (Basmeih); English: AtTartil's own translation following Basmeih.
 
 “Where Qur’anic Knowledge Transforms Lives.” · www.attartilqi.com
