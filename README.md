@@ -4,7 +4,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 
 - `index.html` — home page
 - `al-fatihah/` — Surah al-Fatihah (7 ayat)
-- `al-baqarah/` — Surah al-Baqarah (ayat 1–5)
+- `al-baqarah/` — Surah al-Baqarah (ayat 1–20; bahagian 1 daripada 12)
 - `al-kahfi/` — Surah al-Kahfi (110 ayat)
 - `yasin/` — Surah Yasin (83 ayat)
 - `ar-rahman/` — Surah ar-Rahman (78 ayat)
