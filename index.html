@@ -67,7 +67,8 @@ a.web:hover,a.web:focus-visible{border-color:var(--gold);outline:none}
 .fsz label{color:var(--gold);font-weight:800;padding:3px 10px;cursor:pointer;margin:0;font-size:14px;line-height:22px}
 #fs-s:checked ~ * label[for=fs-s],#fs-m:checked ~ * label[for=fs-m],#fs-l:checked ~ * label[for=fs-l]{background:var(--gold);color:#1a1a1a}
 #fs-s:focus-visible ~ * .fsz,#fs-m:focus-visible ~ * .fsz,#fs-l:focus-visible ~ * .fsz{outline:2px solid var(--gold);outline-offset:2px}
-#fs-s:checked ~ *{zoom:.9} #fs-l:checked ~ *{zoom:1.2}
+#fs-s:checked ~ :not(.legend){zoom:.9} #fs-l:checked ~ :not(.legend){zoom:1.2}
+@media (max-width:600px){.ay{scroll-margin-top:175px}.fsz label{padding:2px 8px;font-size:13px}.thm{min-width:30px;height:26px;padding:0 7px;font-size:13px}}
 html:has(#th:checked),#th:checked ~ *{--bg:#F6F4EA;--card:#FFFFFF;--line:#D9D3BC;--ink:#1D2414;--muted:#55604A;--gold:#7A5C00;--isim:#1F7A1F;--fiil:#A05A00;--harf:#C0281C;--muq:#3C3A2C}
 html:has(#th:checked) body{background:var(--bg);color:var(--ink)}
 html:has(#th:checked) .legend{background:rgba(246,244,234,.96)}
@@ -88,7 +89,7 @@ html:has(#th:checked) .toc .cnt{opacity:1}
 <div><h1><span class="nw">E-Quran</span> <span class="lm">Perkata Berwarna</span><span class="le">Colour-Coded Word by Word</span></h1>
 <p class="inst">AtTartil Quranic Institute, Singapore</p>
 <p class="sub"><span class="lm">Rujukan pelajar &amp; umum untuk membaca serta memahami <span class="nw">al-Qur’an</span></span><span class="le">A reference for students &amp; the public to read and understand the Qur’an</span></p></div>
-<span class="tools"><a class="web" href="https://www.attartilqi.com" target="_blank" rel="noopener">🌐 www.attartilqi.com</a><span class="fsz" aria-label="Saiz tulisan / Text size"><label for="fs-s" title="Kecil / Smaller">A−</label><label for="fs-m" title="Biasa / Normal">A</label><label for="fs-l" title="Besar / Larger">A+</label></span><label for="th" class="thm" title="Tema cerah / gelap · Light / dark theme"><span class="th-to-l" aria-hidden="true">☀</span><span class="th-to-d" aria-hidden="true">🌙</span></label><span class="lang" aria-label="Bahasa / Language"><label for="lg-en">EN</label><label for="lg-ms">BM</label></span></span>
+<span class="tools"><a class="web" href="https://www.attartilqi.com" target="_blank" rel="noopener">🌐 www.attartilqi.com</a><span class="fsz" role="group" aria-label="Saiz tulisan / Text size"><label for="fs-s" title="Kecil / Smaller">A−</label><label for="fs-m" title="Biasa / Normal">A</label><label for="fs-l" title="Besar / Larger">A+</label></span><label for="th" class="thm" title="Tema cerah / gelap · Light / dark theme"><span class="th-to-l" aria-hidden="true">☀</span><span class="th-to-d" aria-hidden="true">🌙</span></label><span class="lang" aria-label="Bahasa / Language"><label for="lg-en">EN</label><label for="lg-ms">BM</label></span></span>
 </header>
 <div class="key"><span class="k1"><i></i>Isim <span class="lm">(kata nama)</span><span class="le">(noun)</span></span><span class="k2"><i></i>Fiʿil <span class="lm">(kata kerja)</span><span class="le">(verb)</span></span><span class="k3"><i></i>Ḥarf <span class="lm">(kata sendi/partikel)</span><span class="le">(particle)</span></span></div>
 <!--TOC-->
