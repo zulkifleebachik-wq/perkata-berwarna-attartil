@@ -68,7 +68,8 @@ a.web:hover,a.web:focus-visible{border-color:var(--gold);outline:none}
 #fs-s:checked ~ * label[for=fs-s],#fs-m:checked ~ * label[for=fs-m],#fs-l:checked ~ * label[for=fs-l]{background:var(--gold);color:#1a1a1a}
 #fs-s:focus-visible ~ * .fsz,#fs-m:focus-visible ~ * .fsz,#fs-l:focus-visible ~ * .fsz{outline:2px solid var(--gold);outline-offset:2px}
 #fs-s:checked ~ :not(.legend){zoom:.9} #fs-l:checked ~ :not(.legend){zoom:1.2}
-@media (max-width:600px){.ay{scroll-margin-top:175px}.fsz label{padding:2px 8px;font-size:13px}.thm{min-width:30px;height:26px;padding:0 7px;font-size:13px}}
+.ay{scroll-margin-top:110px} .fsz label{min-height:28px;display:inline-flex;align-items:center}
+@media (max-width:600px){.ay{scroll-margin-top:175px}.fsz label{padding:2px 8px;font-size:13px}.thm{min-width:30px;height:28px;padding:0 7px;font-size:13px}}
 html:has(#th:checked),#th:checked ~ *{--bg:#F6F4EA;--card:#FFFFFF;--line:#D9D3BC;--ink:#1D2414;--muted:#55604A;--gold:#7A5C00;--isim:#1F7A1F;--fiil:#A05A00;--harf:#C0281C;--muq:#3C3A2C}
 html:has(#th:checked) body{background:var(--bg);color:var(--ink)}
 html:has(#th:checked) .legend{background:rgba(246,244,234,.96)}
