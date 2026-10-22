@@ -58,9 +58,23 @@ a.web:hover,a.web:focus-visible{border-color:var(--gold);outline:none}
 .toc-list a b{color:var(--gold);font-size:13px;min-width:24px;text-align:right}
 .toc-list a small{color:var(--muted);font-size:12px}
 .toc-list a:hover,.toc-list a:focus-visible{border-color:var(--gold);outline:none}
+
+/* light theme (CSS-only switch #th) */
+.thm{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:30px;border:1px solid var(--gold);border-radius:999px;cursor:pointer;font-size:15px;line-height:1;padding:0 9px;margin:0}
+.th-to-d{display:none} #th:checked ~ * .th-to-l{display:none} #th:checked ~ * .th-to-d{display:inline}
+#th:focus-visible ~ * .thm{outline:2px solid var(--gold);outline-offset:2px}
+html:has(#th:checked),#th:checked ~ *{--bg:#F6F4EA;--card:#FFFFFF;--line:#D9D3BC;--ink:#1D2414;--muted:#55604A;--gold:#7A5C00;--isim:#1F7A1F;--fiil:#9A6700;--harf:#C0281C;--muq:#3C3A2C}
+html:has(#th:checked) body{background:var(--bg);color:var(--ink)}
+html:has(#th:checked) .legend{background:rgba(246,244,234,.96)}
+html:has(#th:checked) .w{background:#fff}
+html:has(#th:checked) .ar .m{color:var(--ink)}
+html:has(#th:checked) .fa.n,html:has(#th:checked) .guide .g2,html:has(#th:checked) [style*="#6FD8F0"]{color:#0B6E8C!important}
+html:has(#th:checked) :is(#lg-ms:checked ~ * label[for=lg-ms],#lg-en:checked ~ * label[for=lg-en],.lang button[aria-pressed=true],.home:hover,.home:focus-visible,.infaq-btn,.toc summary){color:#fff}
+html:has(#th:checked) .toc summary{background:var(--gold)}
 </style>
 </head>
 <body>
+<input type="checkbox" id="th" class="sr" aria-label="Tema cerah / Light theme"><script>try{if(localStorage.getItem('pb-theme')==='light')document.getElementById('th').checked=true}catch(x){}document.getElementById('th').addEventListener('change',function(e){try{localStorage.setItem('pb-theme',e.target.checked?'light':'dark')}catch(x){}})</script>
 <input type="radio" name="lg" id="lg-ms" class="sr" aria-label="Bahasa Melayu"><input type="radio" name="lg" id="lg-en" class="sr" checked aria-label="English">
 <div class="wrap">
 <header>
@@ -68,7 +82,7 @@ a.web:hover,a.web:focus-visible{border-color:var(--gold);outline:none}
 <div><h1><span class="nw">E-Quran</span> <span class="lm">Perkata Berwarna</span><span class="le">Colour-Coded Word by Word</span></h1>
 <p class="inst">AtTartil Quranic Institute, Singapore</p>
 <p class="sub"><span class="lm">Rujukan pelajar &amp; umum untuk membaca serta memahami <span class="nw">al-Qur’an</span></span><span class="le">A reference for students &amp; the public to read and understand the Qur’an</span></p></div>
-<span class="tools"><a class="web" href="https://www.attartilqi.com" target="_blank" rel="noopener">🌐 www.attartilqi.com</a><span class="lang" aria-label="Bahasa / Language"><label for="lg-en">EN</label><label for="lg-ms">BM</label></span></span>
+<span class="tools"><a class="web" href="https://www.attartilqi.com" target="_blank" rel="noopener">🌐 www.attartilqi.com</a><label for="th" class="thm" title="Tema cerah / gelap · Light / dark theme"><span class="th-to-l" aria-hidden="true">☀</span><span class="th-to-d" aria-hidden="true">🌙</span></label><span class="lang" aria-label="Bahasa / Language"><label for="lg-en">EN</label><label for="lg-ms">BM</label></span></span>
 </header>
 <div class="key"><span class="k1"><i></i>Isim <span class="lm">(kata nama)</span><span class="le">(noun)</span></span><span class="k2"><i></i>Fiʿil <span class="lm">(kata kerja)</span><span class="le">(verb)</span></span><span class="k3"><i></i>Ḥarf <span class="lm">(kata sendi/partikel)</span><span class="le">(particle)</span></span></div>
 <!--TOC-->
