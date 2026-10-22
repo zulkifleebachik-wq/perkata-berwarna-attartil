@@ -47,6 +47,17 @@ a.web{color:var(--gold);font-weight:700;font-size:14px;text-decoration:none;bord
 a.web:hover,a.web:focus-visible{border-color:var(--gold);outline:none}
 .credit{margin-top:16px;border-left:3px solid var(--gold);background:var(--card);border-radius:10px;padding:14px 18px;font-size:14.5px;color:var(--muted)}
 .credit b{color:var(--ink)} .credit p+p{margin-top:6px} .credit a{color:var(--gold);font-weight:700}
+.toc{margin:16px 0 0}
+.toc summary{display:inline-flex;align-items:center;gap:6px;cursor:pointer;list-style:none;color:#1a1a1a;background:var(--gold);font-weight:800;font-size:15px;border-radius:999px;padding:6px 16px}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"▾";font-size:13px} .toc[open] summary::after{content:"▴"}
+.toc summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.toc .cnt{font-weight:600;opacity:.75}
+.toc-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+.toc-list a{display:flex;align-items:baseline;gap:8px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--line);border-radius:10px;padding:7px 10px;min-width:0}
+.toc-list a b{color:var(--gold);font-size:13px;min-width:24px;text-align:right}
+.toc-list a small{color:var(--muted);font-size:12px}
+.toc-list a:hover,.toc-list a:focus-visible{border-color:var(--gold);outline:none}
 </style>
 </head>
 <body>
@@ -60,6 +71,29 @@ a.web:hover,a.web:focus-visible{border-color:var(--gold);outline:none}
 <span class="tools"><a class="web" href="https://www.attartilqi.com" target="_blank" rel="noopener">🌐 www.attartilqi.com</a><span class="lang" aria-label="Bahasa / Language"><label for="lg-en">EN</label><label for="lg-ms">BM</label></span></span>
 </header>
 <div class="key"><span class="k1"><i></i>Isim <span class="lm">(kata nama)</span><span class="le">(noun)</span></span><span class="k2"><i></i>Fiʿil <span class="lm">(kata kerja)</span><span class="le">(verb)</span></span><span class="k3"><i></i>Ḥarf <span class="lm">(kata sendi/partikel)</span><span class="le">(particle)</span></span></div>
+<!--TOC-->
+<details class="toc"><summary><span class="lm">☰ Senarai surah</span><span class="le">☰ Surah list</span> <span class="cnt">(18)</span></summary>
+<nav class="toc-list" aria-label="Senarai surah / Surah list">
+<a href="al-fatihah/"><b>1</b><span class="nw">al-Fatihah</span></a>
+<a href="al-baqarah/"><b>2</b><span class="nw">al-Baqarah</span> <small>1–5</small></a>
+<a href="al-kahfi/"><b>18</b><span class="nw">al-Kahfi</span></a>
+<a href="yasin/"><b>36</b><span class="nw">Yasin</span></a>
+<a href="al-mulk/"><b>67</b><span class="nw">al-Mulk</span></a>
+<a href="at-takathur/"><b>102</b><span class="nw">at-Takathur</span></a>
+<a href="al-asr/"><b>103</b><span class="nw">al-‘Asr</span></a>
+<a href="al-humazah/"><b>104</b><span class="nw">al-Humazah</span></a>
+<a href="al-fil/"><b>105</b><span class="nw">al-Fil</span></a>
+<a href="quraisy/"><b>106</b><span class="nw">Quraisy</span></a>
+<a href="al-maun/"><b>107</b><span class="nw">al-Ma‘un</span></a>
+<a href="al-kauthar/"><b>108</b><span class="nw">al-Kauthar</span></a>
+<a href="al-kafirun/"><b>109</b><span class="nw">al-Kafirun</span></a>
+<a href="an-nasr/"><b>110</b><span class="nw">an-Nasr</span></a>
+<a href="al-masad/"><b>111</b><span class="nw">al-Masad</span></a>
+<a href="al-ikhlas/"><b>112</b><span class="nw">al-Ikhlas</span></a>
+<a href="al-falaq/"><b>113</b><span class="nw">al-Falaq</span></a>
+<a href="an-nas/"><b>114</b><span class="nw">an-Nas</span></a>
+</nav></details>
+<!--/TOC-->
 <main>
 <div class="grid">
 <a class="card" href="al-fatihah/">
