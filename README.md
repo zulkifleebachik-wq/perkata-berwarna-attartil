@@ -11,6 +11,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `ar-rahman/` — Surah ar-Rahman (78 ayat)
 - `al-waqiah/` — Surah al-Waqi‘ah (96 ayat)
 - `al-mulk/` — Surah al-Mulk (30 ayat)
+- `an-naba/` … `al-qariah/` — Surah 78–101 (an-Naba’, an-Nazi‘at, ‘Abasa, at-Takwir, al-Infitar, al-Mutaffifin, al-Insyiqaq, al-Buruj, at-Tariq, al-A‘la, al-Ghasyiyah, al-Fajr, al-Balad, asy-Syams, al-Lail, ad-Dhuha, asy-Syarh, at-Tin, al-‘Alaq, al-Qadr, al-Bayyinah, az-Zalzalah, al-‘Adiyat, al-Qari‘ah)
 - `at-takathur/` … `al-masad/` — Surah 102–111 (at-Takathur, al-‘Asr, al-Humazah, al-Fil, Quraisy, al-Ma‘un, al-Kauthar, al-Kafirun, an-Nasr, al-Masad)
 - `al-ikhlas/`, `al-falaq/`, `an-nas/` — Surah al-Ikhlas, al-Falaq, an-Nas
 - `3-qul/` — link page with only the last 3 surahs (al-Ikhlas, al-Falaq, an-Nas)
