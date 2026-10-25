@@ -12,6 +12,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `al-araf/` — Surah al-A‘raf (bahagian 1: ayat 1–29; bahagian 2 di `al-araf/30-47/`: ayat 30–47; bahagian 3 di `al-araf/48-69/`: ayat 48–69; bahagian 4 di `al-araf/70-89/`: ayat 70–89; bahagian 5 di `al-araf/90-124/`: ayat 90–124; bahagian 6 di `al-araf/125-145/`: ayat 125–145; bahagian 7 di `al-araf/146-160/`: ayat 146–160; bahagian 8 di `al-araf/161-180/`: ayat 161–180; bahagian 9 di `al-araf/181-206/`: ayat 181–206; lengkap 206 ayat)
 - `al-anfal/` — Surah al-Anfal (bahagian 1: ayat 1–23; bahagian 2 di `al-anfal/24-41/`: ayat 24–41; bahagian 3 di `al-anfal/42-60/`: ayat 42–60; bahagian 4 di `al-anfal/61-75/`: ayat 61–75; lengkap 75 ayat)
 - `at-taubah/` — Surah at-Taubah (bahagian 1: ayat 1–20; bahagian 2 di `at-taubah/21-37/`: ayat 21–37; bahagian 3 di `at-taubah/38-56/`: ayat 38–56; bahagian 4 di `at-taubah/57-74/`: ayat 57–74; bahagian 5 di `at-taubah/75-94/`: ayat 75–94; bahagian 6 di `at-taubah/95-112/`: ayat 95–112; bahagian 7 di `at-taubah/113-129/`: ayat 113–129; lengkap 129 ayat)
+- `yunus/` — Surah Yunus (bahagian 1: ayat 1–20; bahagian 2 di `yunus/21-38/`: ayat 21–38; bahagian 3 di `yunus/39-60/`: ayat 39–60; bahagian 4 di `yunus/61-82/`: ayat 61–82; bahagian 5 di `yunus/83-109/`: ayat 83–109; lengkap 109 ayat)
 - `al-kahfi/` — Surah al-Kahfi (110 ayat)
 - `luqman/` — Surah Luqman (34 ayat)
 - `yasin/` — Surah Yasin (83 ayat)
