@@ -15,6 +15,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `yunus/` — Surah Yunus (bahagian 1: ayat 1–20; bahagian 2 di `yunus/21-38/`: ayat 21–38; bahagian 3 di `yunus/39-60/`: ayat 39–60; bahagian 4 di `yunus/61-82/`: ayat 61–82; bahagian 5 di `yunus/83-109/`: ayat 83–109; lengkap 109 ayat)
 - `hud/` — Surah Hud (bahagian 1: ayat 1–18; bahagian 2 di `hud/19-37/`: ayat 19–37; bahagian 3 di `hud/38-55/`: ayat 38–55; bahagian 4 di `hud/56-77/`: ayat 56–77; bahagian 5 di `hud/78-99/`: ayat 78–99; bahagian 6 di `hud/100-123/`: ayat 100–123; lengkap 123 ayat)
 - `yusuf/` — Surah Yusuf (bahagian 1: ayat 1–25; bahagian 2 di `yusuf/26-46/`: ayat 26–46; bahagian 3 di `yusuf/47-69/`: ayat 47–69; bahagian 4 di `yusuf/70-92/`: ayat 70–92; bahagian 5 di `yusuf/93-111/`: ayat 93–111; lengkap 111 ayat)
+- `ar-rad/` — Surah ar-Ra‘d (bahagian 1: ayat 1–14; bahagian 2 di `ar-rad/15-28/`: ayat 15–28; bahagian 3 di `ar-rad/29-43/`: ayat 29–43; lengkap 43 ayat)
 - `al-kahfi/` — Surah al-Kahfi (110 ayat)
 - `luqman/` — Surah Luqman (34 ayat)
 - `yasin/` — Surah Yasin (83 ayat)
