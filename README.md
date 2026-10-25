@@ -13,6 +13,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `al-anfal/` — Surah al-Anfal (bahagian 1: ayat 1–23; bahagian 2 di `al-anfal/24-41/`: ayat 24–41; bahagian 3 di `al-anfal/42-60/`: ayat 42–60; bahagian 4 di `al-anfal/61-75/`: ayat 61–75; lengkap 75 ayat)
 - `at-taubah/` — Surah at-Taubah (bahagian 1: ayat 1–20; bahagian 2 di `at-taubah/21-37/`: ayat 21–37; bahagian 3 di `at-taubah/38-56/`: ayat 38–56; bahagian 4 di `at-taubah/57-74/`: ayat 57–74; bahagian 5 di `at-taubah/75-94/`: ayat 75–94; bahagian 6 di `at-taubah/95-112/`: ayat 95–112; bahagian 7 di `at-taubah/113-129/`: ayat 113–129; lengkap 129 ayat)
 - `yunus/` — Surah Yunus (bahagian 1: ayat 1–20; bahagian 2 di `yunus/21-38/`: ayat 21–38; bahagian 3 di `yunus/39-60/`: ayat 39–60; bahagian 4 di `yunus/61-82/`: ayat 61–82; bahagian 5 di `yunus/83-109/`: ayat 83–109; lengkap 109 ayat)
+- `yusuf/` — Surah Yusuf (bahagian 1: ayat 1–25; bahagian 2 di `yusuf/26-46/`: ayat 26–46; bahagian 3 di `yusuf/47-69/`: ayat 47–69; bahagian 4 di `yusuf/70-92/`: ayat 70–92; bahagian 5 di `yusuf/93-111/`: ayat 93–111; lengkap 111 ayat)
 - `al-kahfi/` — Surah al-Kahfi (110 ayat)
 - `luqman/` — Surah Luqman (34 ayat)
 - `yasin/` — Surah Yasin (83 ayat)
