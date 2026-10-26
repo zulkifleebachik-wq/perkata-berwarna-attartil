@@ -18,6 +18,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `ar-rad/` — Surah ar-Ra‘d (bahagian 1: ayat 1–14; bahagian 2 di `ar-rad/15-28/`: ayat 15–28; bahagian 3 di `ar-rad/29-43/`: ayat 29–43; lengkap 43 ayat)
 - `ibrahim/` — Surah Ibrahim (bahagian 1: ayat 1–12; bahagian 2 di `ibrahim/13-30/`: ayat 13–30; bahagian 3 di `ibrahim/31-52/`: ayat 31–52; lengkap 52 ayat)
 - `al-hijr/` — Surah al-Hijr (bahagian 1: ayat 1–25; bahagian 2 di `al-hijr/26-50/`: ayat 26–50; bahagian 3 di `al-hijr/51-99/`: ayat 51–99; lengkap 99 ayat)
+- `an-nahl/` — Surah an-Nahl (bahagian 1: ayat 1–23; bahagian 2 di `an-nahl/24-40/`: ayat 24–40; bahagian 3 di `an-nahl/41-64/`: ayat 41–64; bahagian 4 di `an-nahl/65-76/`: ayat 65–76; bahagian 5 di `an-nahl/77-89/`: ayat 77–89; bahagian 6 di `an-nahl/90-111/`: ayat 90–111; bahagian 7 di `an-nahl/112-128/`: ayat 112–128; lengkap 128 ayat)
 - `al-kahfi/` — Surah al-Kahfi (110 ayat)
 - `luqman/` — Surah Luqman (34 ayat)
 - `yasin/` — Surah Yasin (83 ayat)
