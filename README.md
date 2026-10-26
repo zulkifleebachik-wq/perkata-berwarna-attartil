@@ -22,6 +22,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `al-isra/` — Surah al-Isra’ (bahagian 1: ayat 1–21; bahagian 2 di `al-isra/22-39/`: ayat 22–39; bahagian 3 di `al-isra/40-60/`: ayat 40–60; bahagian 4 di `al-isra/61-77/`: ayat 61–77; bahagian 5 di `al-isra/78-93/`: ayat 78–93; bahagian 6 di `al-isra/94-111/`: ayat 94–111; lengkap 111 ayat)
 - `al-kahfi/` — Surah al-Kahfi (110 ayat)
 - `maryam/` — Surah Maryam (bahagian 1: ayat 1–15; bahagian 2 di `maryam/16-40/`: ayat 16–40; bahagian 3 di `maryam/41-65/`: ayat 41–65; bahagian 4 di `maryam/66-98/`: ayat 66–98; lengkap 98 ayat)
+- `taha/` — Surah Taha (bahagian 1: ayat 1–23; bahagian 2 di `taha/24-55/`: ayat 24–55; bahagian 3 di `taha/56-76/`: ayat 56–76; bahagian 4 di `taha/77-98/`: ayat 77–98; bahagian 5 di `taha/99-114/`: ayat 99–114; bahagian 6 di `taha/115-135/`: ayat 115–135; lengkap 135 ayat)
 - `luqman/` — Surah Luqman (34 ayat)
 - `yasin/` — Surah Yasin (83 ayat)
 - `ar-rahman/` — Surah ar-Rahman (78 ayat)
