@@ -24,6 +24,7 @@ Colour-coded word-by-word Qur'an notes (isim green, fi'il yellow, harf red) with
 - `maryam/` — Surah Maryam (bahagian 1: ayat 1–15; bahagian 2 di `maryam/16-40/`: ayat 16–40; bahagian 3 di `maryam/41-65/`: ayat 41–65; bahagian 4 di `maryam/66-98/`: ayat 66–98; lengkap 98 ayat)
 - `taha/` — Surah Taha (bahagian 1: ayat 1–23; bahagian 2 di `taha/24-55/`: ayat 24–55; bahagian 3 di `taha/56-76/`: ayat 56–76; bahagian 4 di `taha/77-98/`: ayat 77–98; bahagian 5 di `taha/99-114/`: ayat 99–114; bahagian 6 di `taha/115-135/`: ayat 115–135; lengkap 135 ayat)
 - `al-anbiya/` — Surah al-Anbiya’ (bahagian 1: ayat 1–23; bahagian 2 di `al-anbiya/24-47/`: ayat 24–47; bahagian 3 di `al-anbiya/48-75/`: ayat 48–75; bahagian 4 di `al-anbiya/76-93/`: ayat 76–93; bahagian 5 di `al-anbiya/94-112/`: ayat 94–112; lengkap 112 ayat)
+- `al-hajj/` — Surah al-Hajj (78 ayat)
 - `luqman/` — Surah Luqman (34 ayat)
 - `yasin/` — Surah Yasin (83 ayat)
 - `ar-rahman/` — Surah ar-Rahman (78 ayat)
