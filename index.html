@@ -81,7 +81,7 @@ html:has(#th:checked) .fa.n,html:has(#th:checked) .guide .g2,html:has(#th:checke
 html:has(#th:checked) :is(#fs-s:checked ~ * label[for=fs-s],#fs-m:checked ~ * label[for=fs-m],#fs-l:checked ~ * label[for=fs-l],#lg-ms:checked ~ * label[for=lg-ms],#lg-en:checked ~ * label[for=lg-en],.lang button[aria-pressed=true],.home:hover,.home:focus-visible,.infaq-btn,.toc summary){color:#fff}
 html:has(#th:checked) .toc summary{background:var(--gold)}
 html:has(#th:checked) .toc .cnt{opacity:1}
-</style>
+.lf{font-feature-settings:"calt" 0}</style>
 </head>
 <body>
 <input type="checkbox" id="th" class="sr" aria-label="Tema cerah / Light theme"><input type="radio" name="fs" id="fs-s" class="sr" aria-label="Tulisan kecil / Smaller text"><input type="radio" name="fs" id="fs-m" class="sr" checked aria-label="Tulisan biasa / Normal text"><input type="radio" name="fs" id="fs-l" class="sr" aria-label="Tulisan besar / Larger text"><script>try{var f=localStorage.getItem('pb-fs');if(f==='s'||f==='l')document.getElementById('fs-'+f).checked=true}catch(x){}['s','m','l'].forEach(function(k){document.getElementById('fs-'+k).addEventListener('change',function(){try{localStorage.setItem('pb-fs',k)}catch(x){}})})</script><script>try{if(localStorage.getItem('pb-theme')==='light')document.getElementById('th').checked=true}catch(x){}document.getElementById('th').addEventListener('change',function(e){try{localStorage.setItem('pb-theme',e.target.checked?'light':'dark')}catch(x){}})</script>
@@ -286,7 +286,7 @@ q.addEventListener('keydown',function(ev){if(ev.key==='Enter'){var l=out.querySe
 <main>
 <div class="grid">
 <a class="card" href="al-fatihah/">
-<p class="ar"><span class="p">ٱلۡ</span><span class="n">حَمۡدُ</span> <span class="p">لِ</span><span class="n">لَّهِ</span> <span class="n">رَبِّ</span> <span class="p">ٱلۡ</span><span class="n">عَٰلَمِينَ</span></p>
+<p class="ar"><span class="p">ٱلۡ</span><span class="n">حَمۡدُ</span> <span class="lf"><span class="p">لِ</span><span class="n">لَّهِ</span></span> <span class="n">رَبِّ</span> <span class="p">ٱلۡ</span><span class="n">عَٰلَمِينَ</span></p>
 <h2>Surah <span class="nw">al-Fatihah</span></h2>
 <p><span class="lm">Surah ke-1 · 7 ayat · 29 kalimah · 4 fiʿil</span><span class="le">Surah 1 · 7 verses · 29 words · 4 verbs</span></p>
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
@@ -316,7 +316,7 @@ q.addEventListener('keydown',function(ev){if(ev.key==='Enter'){var l=out.querySe
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
 </a>
 <a class="card" href="al-anam/">
-<p class="ar"><span class="p">ٱلۡ</span><span class="n">حَمۡدُ</span> <span class="p">لِ</span><span class="n">لَّهِ</span> <span class="n">ٱلَّذِي</span> <span class="v">خَلَقَ</span></p>
+<p class="ar"><span class="p">ٱلۡ</span><span class="n">حَمۡدُ</span> <span class="lf"><span class="p">لِ</span><span class="n">لَّهِ</span></span> <span class="n">ٱلَّذِي</span> <span class="v">خَلَقَ</span></p>
 <h2>Surah <span class="nw">al-An‘am</span> <span style="white-space:nowrap">1–165</span></h2>
 <p><span class="lm">Surah ke-6 · ayat 1–165 (8 bahagian) · 3050 kalimah · 819 fiʿil</span><span class="le">Surah 6 · verses 1–165 (8 parts) · 3050 words · 819 verbs</span></p>
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
@@ -388,7 +388,7 @@ q.addEventListener('keydown',function(ev){if(ev.key==='Enter'){var l=out.querySe
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
 </a>
 <a class="card" href="al-kahfi/">
-<p class="ar"><span class="p">ٱلۡ</span><span class="n">حَمۡدُ</span> <span class="p">لِ</span><span class="n">لَّهِ</span> <span class="n">ٱلَّذِيٓ</span> <span class="v">أَنزَلَ</span></p>
+<p class="ar"><span class="p">ٱلۡ</span><span class="n">حَمۡدُ</span> <span class="lf"><span class="p">لِ</span><span class="n">لَّهِ</span></span> <span class="n">ٱلَّذِيٓ</span> <span class="v">أَنزَلَ</span></p>
 <h2>Surah <span class="nw">al-Kahfi</span></h2>
 <p><span class="lm">Surah ke-18 · 110 ayat · 1579 kalimah · 437 fiʿil</span><span class="le">Surah 18 · 110 verses · 1579 words · 437 verbs</span></p>
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
@@ -442,7 +442,7 @@ q.addEventListener('keydown',function(ev){if(ev.key==='Enter'){var l=out.querySe
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
 </a>
 <a class="card" href="al-hasyr/">
-<p class="ar"><span class="v">سَبَّحَ</span> <span class="p">لِ</span><span class="n">لَّهِ</span> <span class="n">مَا</span></p>
+<p class="ar"><span class="v">سَبَّحَ</span> <span class="lf"><span class="p">لِ</span><span class="n">لَّهِ</span></span> <span class="n">مَا</span></p>
 <h2>Surah <span class="nw">al-Hasyr</span></h2>
 <p><span class="lm">Surah ke-59 · 24 ayat · 445 kalimah · 90 fiʿil</span><span class="le">Surah 59 · 24 verses · 445 words · 90 verbs</span></p>
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
@@ -454,13 +454,13 @@ q.addEventListener('keydown',function(ev){if(ev.key==='Enter'){var l=out.querySe
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
 </a>
 <a class="card" href="as-saff/">
-<p class="ar"><span class="v">سَبَّحَ</span> <span class="p">لِ</span><span class="n">لَّهِ</span> <span class="n">مَا</span></p>
+<p class="ar"><span class="v">سَبَّحَ</span> <span class="lf"><span class="p">لِ</span><span class="n">لَّهِ</span></span> <span class="n">مَا</span></p>
 <h2>Surah <span class="nw">as-Saff</span></h2>
 <p><span class="lm">Surah ke-61 · 14 ayat · 221 kalimah · 49 fiʿil</span><span class="le">Surah 61 · 14 verses · 221 words · 49 verbs</span></p>
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
 </a>
 <a class="card" href="al-jumuah/">
-<p class="ar"><span class="v">يُسَبِّحُ</span> <span class="p">لِ</span><span class="n">لَّهِ</span> <span class="n">مَا</span></p>
+<p class="ar"><span class="v">يُسَبِّحُ</span> <span class="lf"><span class="p">لِ</span><span class="n">لَّهِ</span></span> <span class="n">مَا</span></p>
 <h2>Surah <span class="nw">al-Jumu‘ah</span></h2>
 <p><span class="lm">Surah ke-62 · 11 ayat · 175 kalimah · 43 fiʿil</span><span class="le">Surah 62 · 11 verses · 175 words · 43 verbs</span></p>
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
@@ -472,7 +472,7 @@ q.addEventListener('keydown',function(ev){if(ev.key==='Enter'){var l=out.querySe
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
 </a>
 <a class="card" href="at-taghabun/">
-<p class="ar"><span class="v">يُسَبِّحُ</span> <span class="p">لِ</span><span class="n">لَّهِ</span> <span class="n">مَا</span></p>
+<p class="ar"><span class="v">يُسَبِّحُ</span> <span class="lf"><span class="p">لِ</span><span class="n">لَّهِ</span></span> <span class="n">مَا</span></p>
 <h2>Surah <span class="nw">at-Taghabun</span></h2>
 <p><span class="lm">Surah ke-64 · 18 ayat · 241 kalimah · 60 fiʿil</span><span class="le">Surah 64 · 18 verses · 241 words · 60 verbs</span></p>
 <span class="go"><span class="lm">Buka nota →</span><span class="le">Open notes →</span></span>
