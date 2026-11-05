@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     const wv = devs.reduce((s, e) => s + e.visits, 0);
     const engagement7 = { devices: devs.length, visits: wv, visitsPerDevice: devs.length ? +(wv / devs.length).toFixed(2) : 0,
       returnedOn2PlusDays: devs.filter(e => e.days >= 2).length, returnedOn3PlusDays: devs.filter(e => e.days >= 3).length,
-      devicesByDaysActive: dist, note: 'devices counted by anonymous browser ID; a person on two devices counts twice' };
+      devicesByDaysActive: dist, note: 'devices = browsers that started a visit that day (anonymous ID). A person on two devices counts twice. Browsers that block storage count as a new device each day and about one visit per 30 min of reading.' };
     const pages = ROUTES.map((p, i) => ({ path: p, views: Number(vals[1 + days.length + i]) || 0 }))
       .sort((a, b) => b.views - a.views || a.path.localeCompare(b.path));
     // Per-surah total = the surah's first page + all its parts.

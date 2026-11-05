@@ -55,7 +55,9 @@
       }).catch(function () {});
   }
   var hit = (seen[path] && !newVisit) ? Promise.resolve() : send(true, newVisit);
+  // Every page: keep the sitting alive while the reader is on it (so a second tab is not a new visit).
+  setInterval(function () { if (document.visibilityState === 'visible') touch(); }, 60000);
   if (!document.getElementById('kv')) return;
   hit.then(badge);
-  setInterval(function () { if (document.visibilityState === 'visible') { badge(); touch(); } }, 60000);
+  setInterval(function () { if (document.visibilityState === 'visible') badge(); }, 60000);
 })();

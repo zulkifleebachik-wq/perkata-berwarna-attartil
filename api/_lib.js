@@ -69,7 +69,9 @@ export function deviceKey(did, vid) {
     const secret = process.env.STATS_KEY || process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || '';
     return 'd' + createHmac('sha256', secret).update('dev\n' + did).digest('base64url').slice(0, 16);
   }
-  return 'v' + vid.slice(0, 16);
+  // Storage blocked: a separate daily HMAC (not a prefix of the page-view id), so visits cannot be joined to pages.
+  const secret = process.env.STATS_KEY || process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || '';
+  return 'v' + createHmac('sha256', secret).update('fallback\n' + vid).digest('base64url').slice(0, 16);
 }
 
 export function keyOk(given) {

@@ -7,7 +7,7 @@ import { ROUTES } from './_routes.js';
 
 const ROUTE_SET = new Set(ROUTES);
 const RATE_MAX = 300;         // hits per IP per minute (a full class on one mosque/school Wi-Fi still fits)
-const IP_DAY_MAX = 3000;      // counted views per IP per Singapore day
+const IP_DAY_MAX = 3000;      // counted views and visits per IP per Singapore day
 const DAY_TTL = 400 * 86400;  // daily totals kept ~13 months
 const DEV_TTL = 40 * 86400;   // per-device daily visit counts kept 40 days (for the 7- and 30-day figures)
 
