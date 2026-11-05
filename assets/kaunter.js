@@ -8,7 +8,7 @@
   var day = new Date(Date.now() + 288e5).toISOString().slice(0, 10); // Asia/Singapore (UTC+8)
   var K = 'pb-kv', seen = {}, st = null;
   try { st = JSON.parse(localStorage.getItem(K) || 'null'); } catch (x) {}
-  if (st && st.d === day && st.p) seen = st.p;
+  if (st && st.d === day && st.p && typeof st.p === 'object' && !Array.isArray(st.p)) seen = st.p;
   function badge() {
     var b = document.getElementById('kv');
     if (!b) return;

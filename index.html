@@ -81,9 +81,13 @@ html:has(#th:checked) .fa.n,html:has(#th:checked) .guide .g2,html:has(#th:checke
 html:has(#th:checked) :is(#fs-s:checked ~ * label[for=fs-s],#fs-m:checked ~ * label[for=fs-m],#fs-l:checked ~ * label[for=fs-l],#lg-ms:checked ~ * label[for=lg-ms],#lg-en:checked ~ * label[for=lg-en],.lang button[aria-pressed=true],.home:hover,.home:focus-visible,.infaq-btn,.toc summary){color:#fff}
 html:has(#th:checked) .toc summary{background:var(--gold)}
 html:has(#th:checked) .toc .cnt{opacity:1}
-@font-face{font-family:'KFGQPC Hafs LF';font-style:normal;font-weight:400;font-display:block;src:url(assets/kfgqpc-hafs-v18-lf.woff2) format('woff2')}.lf{font-family:'KFGQPC Hafs LF','KFGQPC Hafs','Amiri Quran',serif;font-feature-settings:"calt" 0}.kv{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:0 6px;margin:22px 0 0;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--muted);font-size:13px;line-height:1.5}
+@font-face{font-family:'KFGQPC Hafs LF';font-style:normal;font-weight:400;font-display:block;src:url(assets/kfgqpc-hafs-v18-lf.woff2) format('woff2')}.lf{font-family:'KFGQPC Hafs LF','KFGQPC Hafs','Amiri Quran',serif;font-feature-settings:"calt" 0}.kv{display:flex;flex-direction:column;justify-content:center;margin:0;padding:5px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--muted);font-size:12.5px;line-height:1.45}
 .kv[hidden]{display:none}
-.kv b{color:var(--gold);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.kv-r .lm,.kv-r .le,.kv b{white-space:nowrap}
+@media (max-width:600px){.kv{flex:1 1 0;min-width:0;max-width:max-content}}
+.kv-r+.kv-r{padding-left:1.45em}
+.kv b{color:var(--gold);font-weight:800;font-variant-numeric:tabular-nums}
+@media (min-width:601px){header>div{flex:1 1 calc(100% - 100px)}.kv{order:2;flex-direction:row;flex-wrap:wrap;gap:0 10px;padding:3px 12px}.kv-r+.kv-r{padding-left:0}.tools{order:3}}
 </style>
 <script defer src="/assets/kaunter.js"></script><script defer src="/_vercel/insights/script.js"></script></head>
 <body>
@@ -92,6 +96,7 @@ html:has(#th:checked) .toc .cnt{opacity:1}
 <div class="wrap">
 <header>
 <a href="https://www.attartilqi.com" target="_blank" rel="noopener" aria-label="AtTartil Quranic Institute — www.attartilqi.com"><img src="assets/attartil-logo.webp" alt="Logo AtTartil Quranic Institute"></a>
+<p class="kv" id="kv" hidden><span class="kv-r"><span aria-hidden="true">👁</span> <span class="lm">Paparan halaman:</span><span class="le">Page views:</span> <b data-k="total">–</b></span><span class="kv-r"><span class="lm">Hari ini:</span><span class="le">Today:</span> <b data-k="today">–</b></span></p>
 <div><h1><span class="nw">E-Quran</span> <span class="lm">Perkata Berwarna</span><span class="le">Colour-Coded Word by Word</span></h1>
 <p class="inst">AtTartil Quranic Institute, Singapore</p>
 <p class="sub"><span class="lm">Rujukan pelajar &amp; umum untuk membaca serta memahami <span class="nw">al-Qur’an</span></span><span class="le">A reference for students &amp; the public to read and understand the Qur’an</span></p></div>
@@ -1010,7 +1015,6 @@ q.addEventListener('keydown',function(ev){if(ev.key==='Enter'){var l=out.querySe
 <p class="ask"><span class="lm">Sekiranya terdapat sebarang kesilapan, mohon maklumkan kepada penyusun melalui <a href="https://attartilqi.com/contact" target="_blank" rel="noopener">halaman Hubungi Kami</a>. Doakanlah agar usaha kecil ini diterima Allah dan memberi manfaat.</span><span class="le">If you notice any error, please let the compiler know through our <a href="https://attartilqi.com/contact" target="_blank" rel="noopener">Contact page</a>. Kindly pray that Allah accepts this small effort and makes it beneficial.</span></p></div>
 <div class="infaq"><p><span class="lm"><b>Sokong AtTartil R&amp;D</b><br><b style="color:var(--gold)">Dekatkan Hati kepada <span class="nw" style="white-space:nowrap">al-Qur’an</span>.</b><br>Bantu kelangsungan dakwah, penyelidikan dan pembangunan AtTartil—menjadikan pembelajaran <span class="nw" style="white-space:nowrap">al-Qur’an</span> mudah dicapai serta menyuburkan hubungan yang lebih erat dengan Allah melalui <span class="nw" style="white-space:nowrap">kalam-Nya</span>. Untuk menyumbang kepada dakwah, sila infaq melalui laman kami (rujukan: <i>R&amp;D AtTartil</i>).</span><span class="le"><b>Support AtTartil R&amp;D</b><br><b style="color:var(--gold)">Bring Hearts Closer to the Qur’an.</b><br>Help sustain AtTartil’s dakwah, research and development—making Qur’anic learning accessible and inspiring a deeper connection with Allah through His words. To contribute to the dakwah, please give through our website (reference: <i>R&amp;D AtTartil</i>).</span></p><a class="infaq-btn" href="https://attartilqi.com/infaq" target="_blank" rel="noopener"><span class="lm">💚 Infaq / Sumbang</span><span class="le">💚 Infaq / Donate</span></a></div>
 </main>
-<p class="kv" id="kv" hidden aria-live="polite"><span aria-hidden="true">👁</span> <span class="lm">Jumlah lawatan:</span><span class="le">Total visits:</span> <b data-k="total">–</b> <span class="kv-dot" aria-hidden="true">·</span> <span class="lm">Hari ini:</span><span class="le">Today:</span> <b data-k="today">–</b></p>
 <footer>© AtTartil Quranic Institute, Singapore · “Where Qur’anic Knowledge Transforms Lives.” · <a href="https://www.attartilqi.com" target="_blank" rel="noopener" style="color:var(--gold)">www.attartilqi.com</a></footer>
 </div>
 </body>
