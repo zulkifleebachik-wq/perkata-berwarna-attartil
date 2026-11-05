@@ -62,6 +62,16 @@ export function sameOrigin(req) {
   try { return new URL(o).host === h; } catch { return false; }
 }
 
+// Anonymous device key for UZB's engagement figures: HMAC of the browser's random ID (fixed key, so a device
+// can be recognised across days). Without a usable ID, falls back to the daily IP+UA id (that day only).
+export function deviceKey(did, vid) {
+  if (typeof did === 'string' && /^[A-Za-z0-9_-]{22}$/.test(did)) {
+    const secret = process.env.STATS_KEY || process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || '';
+    return 'd' + createHmac('sha256', secret).update('dev\n' + did).digest('base64url').slice(0, 16);
+  }
+  return 'v' + vid.slice(0, 16);
+}
+
 export function keyOk(given) {
   const want = process.env.STATS_KEY || '';
   if (want.length < 24 || typeof given !== 'string') return false;

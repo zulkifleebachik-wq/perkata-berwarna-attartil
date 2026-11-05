@@ -12,8 +12,20 @@ export default async function handler(req, res) {
     const days = [];
     for (let i = 29; i >= 0; i--) days.push(sgDay(Date.now() - i * 86400e3));
     const vals = await r.mget('pv:total', ...days.map(d => `pv:day:${d}`), ...ROUTES.map(p => `pv:path:${p}`));
+    const vv = await r.mget('vis:total', ...days.map(d => `vis:day:${d}`));
+    const dp = r.pipeline(); for (const d of days) dp.hlen(`dv:${d}`); const devDay = await dp.exec();
+    const wp = r.pipeline(); for (const d of days.slice(-7)) wp.hgetall(`dv:${d}`); const week = await wp.exec();
     const total = Number(vals[0]) || 0;
-    const daily = days.map((d, i) => ({ date: d, views: Number(vals[1 + i]) || 0 }));
+    const daily = days.map((d, i) => ({ date: d, views: Number(vals[1 + i]) || 0, visits: Number(vv[1 + i]) || 0, devices: Number(devDay[i]) || 0 }));
+    // Engagement over the last 7 Singapore days (anonymous devices; one device = one browser).
+    const per = {};
+    week.forEach(h => { for (const [k, n] of Object.entries(h || {})) { const e = per[k] || (per[k] = { days: 0, visits: 0 }); e.days++; e.visits += Number(n) || 0; } });
+    const devs = Object.values(per), dist = {};
+    for (const e of devs) dist[e.days] = (dist[e.days] || 0) + 1;
+    const wv = devs.reduce((s, e) => s + e.visits, 0);
+    const engagement7 = { devices: devs.length, visits: wv, visitsPerDevice: devs.length ? +(wv / devs.length).toFixed(2) : 0,
+      returnedOn2PlusDays: devs.filter(e => e.days >= 2).length, returnedOn3PlusDays: devs.filter(e => e.days >= 3).length,
+      devicesByDaysActive: dist, note: 'devices counted by anonymous browser ID; a person on two devices counts twice' };
     const pages = ROUTES.map((p, i) => ({ path: p, views: Number(vals[1 + days.length + i]) || 0 }))
       .sort((a, b) => b.views - a.views || a.path.localeCompare(b.path));
     // Per-surah total = the surah's first page + all its parts.
@@ -23,7 +35,8 @@ export default async function handler(req, res) {
       bySurah[s] = (bySurah[s] || 0) + views;
     }
     const surahs = Object.entries(bySurah).map(([surah, views]) => ({ surah, views })).sort((a, b) => b.views - a.views);
-    return res.status(200).json({ timezone: 'Asia/Singapore', today: sgDay(), total, last30: daily, surahs, pages });
+    return res.status(200).json({ timezone: 'Asia/Singapore', today: sgDay(), total, visitsTotal: Number(vv[0]) || 0,
+      visitRule: 'new visit after 30 minutes away', engagement7, last30: daily, surahs, pages });
   } catch (e) {
     console.error('stats', e && e.message);
     return res.status(503).json({ error: 'unavailable' });
