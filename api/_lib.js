@@ -42,8 +42,16 @@ export function visitorId(req, day) {
   return createHmac('sha256', dailyKey(day)).update(clientIp(req) + '\n' + ua).digest('base64url').slice(0, 22);
 }
 // Same daily key, IP only: used for the rate limit, so changing the User-Agent does not get round it.
+// IPv6 clients are bucketed by their /64 (one home or phone network), so rotating addresses inside it does not help.
+export function ipBucket(ip) {
+  if (!ip.includes(':') || /^::ffff:\d+\.\d+\.\d+\.\d+$/i.test(ip)) return ip.replace(/^::ffff:/i, '');
+  const [a, b = ''] = ip.toLowerCase().split('%')[0].split('::');
+  const L = a ? a.split(':') : [], R = b ? b.split(':') : [];
+  const full = ip.includes('::') ? [...L, ...Array(Math.max(0, 8 - L.length - R.length)).fill('0'), ...R] : L;
+  return full.slice(0, 4).map(h => (parseInt(h, 16) || 0).toString(16)).join(':') + '::/64';
+}
 export function ipId(req, day) {
-  return createHmac('sha256', dailyKey(day)).update('ip\n' + clientIp(req)).digest('base64url').slice(0, 22);
+  return createHmac('sha256', dailyKey(day)).update('ip\n' + ipBucket(clientIp(req))).digest('base64url').slice(0, 22);
 }
 
 // Only count requests sent by the site's own pages (browsers always send Origin on a POST fetch).

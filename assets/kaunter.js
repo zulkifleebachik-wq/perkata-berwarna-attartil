@@ -20,14 +20,15 @@
       b.hidden = false;
     }).catch(function () {});
   }
-  var hit = Promise.resolve();
-  if (!seen[path]) {
-    hit = fetch('/api/hit', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+  function send(again) {
+    return fetch('/api/hit', { method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ path: path }), credentials: 'omit', keepalive: true })
       .then(function (r) {
         if (r.ok) { seen[path] = 1; try { localStorage.setItem(K, JSON.stringify({ d: day, p: seen })); } catch (x) {} }
+        else if (r.status === 429 && again) setTimeout(function () { send(false); }, 70000); // busy shared Wi-Fi: try once more
       }).catch(function () {});
   }
+  var hit = seen[path] ? Promise.resolve() : send(true);
   if (!document.getElementById('kv')) return;
   hit.then(badge);
   setInterval(function () { if (document.visibilityState === 'visible') badge(); }, 60000);

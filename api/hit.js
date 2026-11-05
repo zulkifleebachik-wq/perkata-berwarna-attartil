@@ -3,8 +3,8 @@ import { redis, sgDay, isBot, visitorId, ipId, sameOrigin } from './_lib.js';
 import { ROUTES } from './_routes.js';
 
 const ROUTE_SET = new Set(ROUTES);
-const RATE_MAX = 60;          // hits per IP per minute (all browsers on that IP together)
-const IP_DAY_MAX = 600;       // counted views per IP per Singapore day (a whole school/office behind one IP still fits)
+const RATE_MAX = 300;         // hits per IP per minute (a full class on one mosque/school Wi-Fi still fits)
+const IP_DAY_MAX = 3000;      // counted views per IP per Singapore day
 const DAY_TTL = 400 * 86400;  // daily totals kept ~13 months
 
 export default async function handler(req, res) {
@@ -26,11 +26,12 @@ export default async function handler(req, res) {
     const [n] = await r.pipeline().incr(rl).expire(rl, 90).exec();
     if (n > RATE_MAX) return res.status(429).json({ ok: false, counted: false });
     // Server-side once-per-day check (backs up the browser's localStorage flag).
-    const fresh = await r.set(`seen:${day}:${vid}:${path}`, 1, { nx: true, ex: 2 * 86400 });
+    const seenKey = `seen:${day}:${vid}:${path}`;
+    const fresh = await r.set(seenKey, 1, { nx: true, ex: 2 * 86400 });
     if (!fresh) return res.status(200).json({ ok: true, counted: false });
     const ipDay = `ipd:${day}:${iid}`;
     const [m] = await r.pipeline().incr(ipDay).expire(ipDay, 2 * 86400).exec();
-    if (m > IP_DAY_MAX) return res.status(429).json({ ok: false, counted: false });
+    if (m > IP_DAY_MAX) { await r.del(seenKey); return res.status(429).json({ ok: false, counted: false }); }
     await r.pipeline()
       .incr('pv:total')
       .incr(`pv:day:${day}`).expire(`pv:day:${day}`, DAY_TTL)
