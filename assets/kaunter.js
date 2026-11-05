@@ -3,7 +3,9 @@
    - Page view: once per page per Singapore day (localStorage flag + server check). Refresh never counts.
    - Visit: a new sitting after 30 minutes away (UZB, 5 Nov 2026). Moving between pages in one sitting = one visit.
    - Device: an anonymous random ID kept in this browser (no name, no IP), so UZB's private stats can show
-     how often devices come back. Nothing here identifies a person. */
+     how often devices come back. Nothing here identifies a person.
+   Requests go only to this site's own /api (credentials 'same-origin': needed behind Vercel's preview login;
+   the site itself sets no cookies). */
 (function () {
   if (!/^https?:$/.test(location.protocol) || !window.fetch) return;
   var path = location.pathname.replace(/index\.html?$/, '');
@@ -35,7 +37,7 @@
   function badge() {
     var b = document.getElementById('kv');
     if (!b) return;
-    fetch('/api/count', { credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+    fetch('/api/count', { credentials: 'same-origin' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
       if (!j || !j.public || typeof j.total !== 'number') { b.hidden = true; return; }
       var f = function (n) { return Number(n).toLocaleString('en-US'); };
       b.querySelector('[data-k=total]').textContent = f(j.total);
@@ -48,7 +50,7 @@
     if (visit) body.v = 1;
     if (did) body.did = did;
     return fetch('/api/hit', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body), credentials: 'omit', keepalive: true })
+      body: JSON.stringify(body), credentials: 'same-origin', keepalive: true })
       .then(function (r) {
         if (r.ok) { seen[path] = 1; put(K, JSON.stringify({ d: day, p: seen })); }
         else if (r.status === 429 && again) setTimeout(function () { send(false, visit); }, 70000); // busy shared Wi-Fi: try once more
