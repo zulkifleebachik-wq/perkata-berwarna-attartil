@@ -1,0 +1,9 @@
+{
+  "name": "perkata-berwarna-attartil",
+  "private": true,
+  "type": "module",
+  "description": "Static site. The only code is the visit counter in /api (Vercel functions).",
+  "dependencies": {
+    "@upstash/redis": "1.39.0"
+  }
+}
