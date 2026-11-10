@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mā مَا · Ḥurūf al-Ma‘ānī · AtTartil</title>
+<meta name="description" content="Ḥurūf al-Ma‘ānī: «mā» (مَا) — kata nama (yang, apa, apa sahaja) dan huruf (tidak, «mā» maṣdar, «mā» tambahan, «innamā»), contoh dalam al-Qur’an, dan beza «mā / lā». AtTartil Quranic Institute.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0F1A0C;--card:#16250F;--line:#2C4220;--ink:#F3EFE0;--muted:#B9C2A8;--gold:#E8C547;--isim:#7BE05A;--harf:#FF6B6B;--fiil:#FFD83D}
+#th:checked ~ .pg{--bg:#F6F4EA;--card:#FFFFFF;--line:#D9D3BC;--ink:#1D2414;--muted:#55604A;--gold:#7A5C00;--isim:#1F7A1F;--harf:#C0281C;--fiil:#A05A00}
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 Manrope,system-ui,sans-serif}
+.pg{background:var(--bg);color:var(--ink);min-height:100vh}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+.sr{position:fixed;top:0;opacity:0;width:1px;height:1px;pointer-events:none}
+.le{display:none}#lg-en:checked ~ .pg .le{display:inline}#lg-en:checked ~ .pg .lm{display:none}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:8px}
+.bar a{color:var(--gold);text-decoration:none;font-weight:700}
+.bar label{border:1px solid var(--line);border-radius:999px;padding:4px 12px;cursor:pointer;color:var(--ink);font-size:14px}
+#lg-ms:checked ~ .pg label[for=lg-ms],#lg-en:checked ~ .pg label[for=lg-en]{border-color:var(--gold);color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:14px 0}
+h1{font-size:30px;margin:4px 0 6px;line-height:1.25}.muted{color:var(--muted)}
+h2{font-size:22px;margin:0 0 6px;line-height:1.3}
+h3{font-size:18px;margin:0 0 4px}
+footer{margin:26px 0 10px;color:var(--muted);font-size:14px;text-align:center}
+.draf{border:2px dashed var(--gold);border-radius:14px;padding:10px 14px;margin:10px 0;font-size:15px}
+.big{font-family:Amiri,serif;font-size:64px;line-height:1.6;color:var(--harf);display:block;text-align:center;direction:rtl}
+.tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:6px 0 4px}
+.tag{border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:14px;color:var(--muted)}
+.toc a{color:var(--gold);text-decoration:none;font-weight:700}
+.toc ol{margin:6px 0 0;padding-left:22px}
+.tb-h{font-weight:800;color:var(--gold);margin:16px 0 4px}.tb-tx{margin:6px 0}
+.tb-ar{font-family:Amiri,serif;font-size:22px;line-height:1.9;color:var(--isim);margin:10px 0 2px}
+.tb-src{font-size:14px;color:var(--muted);margin:0 0 10px}
+.tb-link{color:var(--gold);white-space:nowrap}
+.mean{border-left:4px solid var(--harf);padding:12px 16px;margin:14px 0;background:var(--card);border-radius:0 14px 14px 0;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mean .no{display:inline-block;background:var(--harf);color:#1D2414;border-radius:999px;padding:0 10px;font-weight:800;font-size:14px;margin-right:6px}
+#th:checked ~ .pg .mean .no{color:#FFFFFF}
+.kh{border-left-color:var(--gold)}.kh .no{background:var(--gold)}
+.ay{background:transparent;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:10px 0}
+.ay .v{font-family:Amiri,serif;font-size:26px;line-height:2;direction:rtl;text-align:right;display:block}
+.ay .ref{font-weight:800;font-size:14px;color:var(--gold)}
+.ay .tr{font-size:15px;color:var(--muted);display:block}
+.hf{color:var(--harf)}.is{color:var(--isim)}.fi{color:var(--fiil)}
+.ex{border-left:4px solid var(--gold);padding:10px 14px;margin:12px 0;background:var(--card);border-radius:0 12px 12px 0}
+.ex .q{font-family:Amiri,serif;font-size:24px;direction:rtl;text-align:right;color:var(--ink);display:block}
+.ex .rf{font-weight:800}
+.ex a{color:var(--gold);font-weight:700;text-decoration:none;white-space:nowrap}
+.our{font-style:italic;color:var(--muted)}
+.nw{white-space:nowrap}
+.hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-top:10px}
+.hk{display:block;border:1px solid var(--line);border-radius:14px;padding:10px 12px;text-align:center;color:var(--muted);text-decoration:none}
+.hk .ar{display:block;font-family:Amiri,serif;font-size:30px;line-height:1.7;color:var(--harf)}
+.hk b{display:block;font-size:15px}.hk i{display:block;font-style:normal;font-size:13px}
+a.hk.on{border-color:var(--gold);color:var(--ink)}a.hk.on b{color:var(--gold)}
+.ul{text-decoration:underline;text-decoration-color:var(--harf);text-decoration-thickness:2px;text-underline-offset:.7em;text-decoration-skip-ink:none}
+.ay .v{line-height:2.3}
+.tb-tx:has(.ul){line-height:1.9}
+</style>
+</head>
+<body>
+<input type="radio" name="lg" id="lg-ms" class="sr" checked aria-label="Bahasa Melayu">
+<input type="radio" name="lg" id="lg-en" class="sr" aria-label="English">
+<input type="checkbox" id="th" class="sr" aria-label="Tema cerah / Light theme">
+<div class="pg"><div class="wrap">
+<div class="bar"><a href="../"><span class="lm">‹ Ḥurūf <span class="nw">al-Ma‘ānī</span></span><span class="le">‹ Ḥurūf <span class="nw">al-Ma‘ānī</span></span></a>
+<span><label for="lg-ms">BM</label> <label for="lg-en">EN</label> <label for="th">☀︎/☾</label></span></div>
+
+<!-- 1. HEADWORD -->
+<div class="card">
+<span class="big" lang="ar">مَا</span>
+<h1 style="text-align:center">Mā</h1>
+<div class="tags">
+<span class="tag"><span class="lm">kata nama (ism) atau huruf (ḥarf)</span><span class="le">noun (ism) or particle (ḥarf)</span></span>
+<span class="tag"><span class="lm">yang · apa · tidak · tambahan</span><span class="le">what · which · not · extra</span></span>
+</div>
+<p class="tb-h"><span class="lm">Ringkasnya</span><span class="le">In short</span></p>
+<p class="tb-tx"><span class="lm">«Mā» satu lafaz dengan banyak peranan. <span class="nw">Kadang-kadang</span> ia kata nama (“yang”, “apa?”, “apa sahaja”), <span class="nw">kadang-kadang</span> huruf (“tidak”, atau tambahan). Kata <span class="nw">Ibn Hishām</span>:</span><span class="le">«Mā» is one word with many roles. Sometimes it is a noun (“what, that which”, “what?”, “whatever”), sometimes a particle (“not”, or extra). <span class="nw">Ibn Hishām</span> says:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«مَا تَأْتِي عَلَى وَجْهَيْنِ اسْمِيَّةٍ وَحَرْفِيَّةٍ وَكُلٌّ مِنْهُمَا ثَلَاثَةُ أَقْسَامٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/378" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 390 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> juga berkata ia lafaz yang dikongsi: huruf dan kata nama. Walaupun kitabnya tentang huruf, beliau turut menyenaraikan jenis kata namanya.</span><span class="le"><span class="nw">Al-Murādī</span> also says it is a shared word: a particle and a noun. Though his book is about particles, he also lists its noun kinds.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«لَفْظٌ مُشْتَرَكٌ؛ يَكُونُ حَرْفًا وَاسْمًا.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/304" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 322 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Bab «mā» dalam <span class="nw">kedua-dua</span> kitab sangat panjang. Di sini kami pilih <span class="nw">jenis-jenis</span> utama sahaja; setiap jenis dinamakan, tetapi tidak semuanya diberi ayat.</span><span class="le">The chapter on «mā» in both books is very long. Here we pick the main kinds only; every kind is named, but not all are given a verse.</span></p>
+<p class="tb-tx muted"><span class="lm">Warna dalam ayat di bawah mengikut jenis «mā»: <span class="is">hijau</span> apabila ia kata nama (<i>ism</i>), <span class="hf">merah</span> apabila ia huruf (<i>ḥarf</i>). Huruf «mā» yang bersambung dengan kata lain, seperti «وَمَا», «فَبِمَا», «إِنَّمَا» dan «رُّبَمَا», digaris bawah merah supaya tulisan Arabnya tidak terputus. Hanya «mā» yang dibincangkan diwarnakan; «mā» lain dalam ayat yang sama dibiarkan.</span><span class="le">Colours in the verses below follow the kind of «mā»: <span class="is">green</span> when it is a noun (<i>ism</i>), <span class="hf">red</span> when it is a particle (<i>ḥarf</i>). The particle «mā» joined to another word, such as «وَمَا», «فَبِمَا», «إِنَّمَا» and «رُّبَمَا», is underlined in red so the Arabic script stays joined. Only the «mā» under discussion is coloured; any other «mā» in the same verse is left plain.</span></p>
+</div>
+
+<!-- CONTENTS -->
+<div class="card toc"><b><span class="lm">Kandungan</span><span class="le">Contents</span></b>
+<ol>
+<li><a href="#makna"><span class="lm">A. <span class="nw">Jenis-jenis</span> «mā»</span><span class="le">A. The kinds of «mā»</span></a></li>
+<li><a href="#laman"><span class="lm">B. «Mā» dalam kotak laman kami</span><span class="le">B. «Mā» in our verse boxes</span></a></li>
+<li><a href="#banding"><span class="lm">C. Satu kata, huruf berbeza: «mā / lā»</span><span class="le">C. One word, different particles: «mā / lā»</span></a></li>
+<li><a href="#khilaf"><span class="lm">D. Pendapat yang diperselisihkan</span><span class="le">D. Disputed views</span></a></li>
+<li><a href="#rujukan"><span class="lm">E. Rujukan lanjut</span><span class="le">E. Further reading</span></a></li>
+</ol></div>
+
+<!-- A. KINDS -->
+<div class="card" id="makna">
+<h2><span class="lm">A. <span class="nw">Jenis-jenis</span> «mā»</span><span class="le">A. The kinds of «mā»</span></h2>
+<p class="tb-tx muted"><span class="lm">Susunan ikut <span class="nw">Ibn Hishām</span>: tiga jenis kata nama, kemudian tiga jenis huruf. Ayat contoh ialah ayat yang disebut oleh <span class="nw">Ibn Hishām</span> atau <span class="nw">al-Murādī</span> sendiri bagi jenis itu.</span><span class="le">Order follows <span class="nw">Ibn Hishām</span>: three noun kinds, then three particle kinds. Each example verse is one that <span class="nw">Ibn Hishām</span> or <span class="nw">al-Murādī</span> themselves cite for that kind.</span></p>
+
+<p class="tb-h"><span class="lm">I. «Mā» kata nama (<i>ismiyyah</i>) — <span class="is">hijau</span></span><span class="le">I. «Mā» as a noun (<i>ismiyyah</i>) — <span class="is">green</span></span></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> mengiranya tujuh bahagian; <span class="nw">Ibn Hishām</span> menghimpunkannya dalam tiga:</span><span class="le"><span class="nw">Al-Murādī</span> counts seven parts; <span class="nw">Ibn Hishām</span> groups them in three:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَأَمَّا مَا الْأَسْمِيَّةُ فَلَهَا سَبْعَةُ أَقْسَامٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/318" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 336 · Shamela ↗</a></p>
+
+<div class="mean">
+<h3><span class="no">1</span><span class="lm">Makrifah: “yang, apa yang” (<i>mawṣūlah</i>)</span><span class="le">Definite: “what, that which” (<i>mawṣūlah</i>)</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«نَاقِصَةٌ وَهِيَ الْمَوْصُولَةُ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/378" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 390 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar"><span class="is">مَا</span> عِندَكُمۡ يَنفَدُ وَمَا عِندَ ٱللَّهِ بَاقٖۗ …</span><span class="ref"><span class="nw">an-Naḥl</span> 16:96 <a class="tb-link" href="https://www.quranwordsattartil.com/an-nahl/90-111/#a96"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">(Sebenarnya) apa yang ada pada kamu akan habis dan hilang lenyap, dan apa yang ada di sisi Allah tetap kekal … (Basmeih)</span><span class="le">(In truth) what you have will run out and vanish, while what is with Allah remains forever …</span></span></div>
+<p class="tb-tx"><span class="lm">Ada juga «mā» makrifah yang lengkap tanpa ayat selepasnya, bermakna “sesuatu itu” (<i>tāmmah</i>). Contoh <span class="nw">Ibn Hishām</span>: <span class="nw">al-Baqarah</span> 2:271, «<span class="nw">fa-ni‘immā</span> hiya» (“maka baik sekali ia”):</span><span class="le">There is also a definite «mā» that is complete without a clause after it, meaning “the thing” (<i>tāmmah</i>). <span class="nw">Ibn Hishām’s</span> example: <span class="nw">al-Baqarah</span> 2:271, «<span class="nw">fa-ni‘immā</span> hiya» (“how excellent it is”):</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«عَامَّةٌ أَيْ مُقَدَّرَةٌ بِقَوْلِكَ الشَّيْءُ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/378" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 390 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">2</span><span class="lm">Nakirah: “sesuatu” (<i>mawṣūfah</i>, dan «mā» hairan)</span><span class="le">Indefinite: “a thing” (<i>mawṣūfah</i>, and «mā» of wonder)</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«وَالثَّانِي أَنْ تَكُونَ نَكِرَةً مُجَرَّدَةً عَنْ مَعْنَى الْحَرْفِ وَهِيَ أَيْضًا نَوْعَانِ نَاقِصَةٌ وَتَامَّةٌ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/379" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 391 · Shamela ↗</a></p>
+<p class="tb-ar" lang="ar" dir="rtl">«فَالنَّاقِصَةُ هِيَ الْمَوْصُوفَةُ وَتُقَدَّرُ بِقَوْلِكَ شَيْءٌ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/379" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 391 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Contoh «mā» nakirah yang lengkap ialah «mā» hairan (<i>ta‘ajjub</i>): «mā aḥsana Zaydan!» (“alangkah baiknya Zaid!”), maknanya “sesuatu telah menjadikan Zaid baik”:</span><span class="le">An example of the complete indefinite «mā» is «mā» of wonder (<i>ta‘ajjub</i>): «mā aḥsana Zaydan!» (“how good Zayd is!”), meaning “something has made Zayd good”:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«أَحَدُهَا التَّعَجُّبُ نَحْوُ مَا أَحْسَنَ زَيْدًا الْمَعْنَى شَيْءٌ حَسَّنَ زَيْدًا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/380" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 392 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Contoh-contoh</span> jenis ini ayat buatan, bukan ayat <span class="nw">al-Qur’an</span>.</span><span class="le">The examples for this kind are <span class="nw">made-up</span> sentences, not Qur’anic verses.</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">3</span><span class="lm">Nakirah yang membawa makna huruf: “apa?” dan “apa sahaja”</span><span class="le">Indefinite carrying a particle’s meaning: “what?” and “whatever”</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«وَالثَّالِثُ أَنْ تَكُونَ نَكِرَةً مُضَمَّنَةً مَعْنَى الْحَرْفِ وَهِيَ نَوْعَانِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/380" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 392 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">(a) Soalan (<i>istifhāmiyyah</i>), bermakna “benda apa?”:</span><span class="le">(a) Question (<i>istifhāmiyyah</i>), meaning “what thing?”:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«أَحَدُهُمَا الِاسْتِفْهَامِيَّةُ وَمَعْنَاهَا أَيُّ شَيْءٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/381" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 393 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">قَالُواْ ٱدۡعُ لَنَا رَبَّكَ يُبَيِّن لَّنَا <span class="is">مَا</span> هِيَۚ …</span><span class="ref"><span class="nw">al-Baqarah</span> 2:68 <a class="tb-link" href="https://www.quranwordsattartil.com/al-baqarah/40-74/#a68"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Mereka berkata pula: "Berdoalah kepada Tuhanmu untuk kami, supaya <span class="nw">diterangkan-Nya</span> kepada kami bagaimana (<span class="nw">sifat-sifat</span>) lembu itu?" … (Basmeih)</span><span class="le">They then said: “Pray to your Lord for us, so that He makes clear to us what (the features of) the cow are.” …</span></span></div>
+<p class="tb-tx"><span class="lm">(b) Syarat (<i>sharṭiyyah</i>): “apa sahaja … (maka) …”:</span><span class="le">(b) Condition (<i>sharṭiyyah</i>): “whatever … (then) …”:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«النَّوْعُ الثَّانِي الشَّرْطِيَّةُ وَهِيَ نَوْعَانِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/386" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 398 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar"><span class="is">مَا</span> نَنسَخۡ مِنۡ ءَايَةٍ أَوۡ نُنسِهَا نَأۡتِ بِخَيۡرٖ مِّنۡهَآ أَوۡ مِثۡلِهَآۗ …</span><span class="ref"><span class="nw">al-Baqarah</span> 2:106 <a class="tb-link" href="https://www.quranwordsattartil.com/al-baqarah/104-123/#a106"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Apa sahaja ayat keterangan yang Kami mansukhkan (batalkan), atau yang Kami tinggalkan (atau tangguhkan), Kami datangkan ganti yang lebih baik daripadanya, atau yang sebanding dengannya. … (Basmeih)</span><span class="le">Whatever verse We abrogate (cancel), or leave (or postpone), We bring in its place one that is better than it, or one equal to it. …</span></span></div>
+<p class="tb-tx"><span class="lm">Ada juga «mā» syarat yang bermakna masa (“selagi”), seperti <span class="nw">at-Taubah</span> 9:7 «<span class="nw">fa-mā</span> istaqāmū lakum» (“maka selagi mereka berlaku lurus terhadap kamu”). <span class="nw">Ibn Hishām</span> menyebut ulama yang menetapkannya:</span><span class="le">There is also a conditional «mā» with a time sense (“as long as”), as in <span class="nw">at-Taubah</span> 9:7 «<span class="nw">fa-mā</span> istaqāmū lakum» (“so for as long as they act uprightly towards you”). <span class="nw">Ibn Hishām</span> names the scholars who affirm it:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَزَمَانِيَّةٌ أَثْبَتَ ذَلِكَ الْفَارِسِيُّ وَأَبُو الْبَقَاءِ وَأَبُو شَامَةَ وَابْنُ بَرِّيٍّ وَابْنُ مَالِكٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/386" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 398 · Shamela ↗</a></p>
+</div>
+
+<p class="tb-h"><span class="lm">II. «Mā» huruf (<i>ḥarfiyyah</i>) — <span class="hf">merah</span></span><span class="le">II. «Mā» as a particle (<i>ḥarfiyyah</i>) — <span class="hf">red</span></span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«فَأَمَّا مَا الْحَرْفِيَّةُ فَلَهَا ثَلَاثَةُ أَقْسَامٍ: نَافِيَةٌ، وَمَصْدَرِيَّةٌ، وَزَائِدَةٌ، فَالنَّافِيَةُ قِسْمَانِ: عَامِلَةٌ، وَغَيْرُ عَامِلَةٍ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/304" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 322 · Shamela ↗</a></p>
+
+<div class="mean">
+<h3><span class="no">4</span><span class="lm">Menafikan: “tidak, bukan” (<i>nāfiyah</i>)</span><span class="le">Negating: “not” (<i>nāfiyah</i>)</span></h3>
+<p class="tb-tx"><span class="lm">(a) Dengan ayat kata nama, ia beramal seperti «laysa» di sisi orang Hijaz: khabarnya berbaris atas. Inilah «mā» Ḥijāziyyah:</span><span class="le">(a) With a noun sentence it works like «laysa» for the people of Hijaz: its predicate takes fatḥah. This is the Ḥijāzī «mā»:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«أَحَدُهَا أَنْ تَكُونَ نَافِيَةً فَإِنْ دَخَلَتْ عَلَى الْجُمْلَةِ الِاسْمِيَّةِ أَعْمَلَهَا الْحِجَازِيُّونَ وَالتِّهَامِيُّونَ وَالنَّجْدِيُّونَ عَمَلَ لَيْسَ بِشُرُوطٍ مَعْرُوفَةٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/387" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 399 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… <span class="hf">مَا</span> هَٰذَا بَشَرًا …</span><span class="ref"><span class="nw">Yūsuf</span> 12:31 <a class="tb-link" href="https://www.quranwordsattartil.com/yusuf/26-46/#a31"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Ini bukanlah seorang manusia … (Basmeih)</span><span class="le">… This is not a human being …</span></span></div>
+<p class="tb-ar" lang="ar" dir="rtl">«فَالْعَامِلَةُ: هِيَ مَا الْحِجَازِيَّةُ. وَهِيَ تَرْفَعُ الِاسْمَ، وَتَنْصِبُ الْخَبَرَ، عِنْدَ أَهْلِ الْحِجَازِ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/304" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 322 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="our">Huraian kami:</span> perhatikan «basharan» berbaris atas dua (khabar «mā»).</span><span class="le"><span class="our">Our explanation:</span> note that «basharan» ends in -an (the predicate of «mā»).</span></p>
+<p class="tb-tx"><span class="lm">(b) Dengan ayat kata kerja, ia tidak beramal:</span><span class="le">(b) With a verb sentence it does not govern:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَإِنْ دَخَلَتْ عَلَى الْفِعْلِيَّةِ لَمْ تَعْمَلْ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/387" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 399 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… <span class="ul">وَمَا</span> تُنفِقُونَ إِلَّا ٱبۡتِغَآءَ وَجۡهِ ٱللَّهِۚ …</span><span class="ref"><span class="nw">al-Baqarah</span> 2:272 <a class="tb-link" href="https://www.quranwordsattartil.com/al-baqarah/261-286/#a272"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… dan kamu pula tidaklah mendermakan sesuatu melainkan kerana menuntut keredhaan Allah … (Basmeih)</span><span class="le">… and you do not give anything except in seeking the pleasure of Allah …</span></span></div>
+<p class="tb-tx"><span class="lm">Kata <span class="nw">Ibn Hishām</span>, dua «wa mā tunfiqū» sebelum dan selepasnya dalam ayat yang sama pula «mā» syarat, dengan bukti «fa» dan baris mati (<a class="tb-link" href="https://shamela.ws/book/6972/387" target="_blank" rel="noopener">h. 399 · Shamela ↗</a>). Tidak beramal juga dengan ayat kata nama ialah lughah Banī Tamīm:</span><span class="le"><span class="nw">Ibn Hishām</span> says the «wa mā tunfiqū» before and after this one in the verse is conditional «mā», shown by the «fa» and the jussive (<a class="tb-link" href="https://shamela.ws/book/6972/387" target="_blank" rel="noopener">p. 399 · Shamela ↗</a>). Not governing a noun sentence either is the dialect of Banū Tamīm:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَحَكَى سِيبَوَيْهِ أَنَّ إِهْمَالَهَا لُغَةُ بَنِي تَمِيمٍ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/311" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 329 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">5</span><span class="lm">«Mā» maṣdar (<i>maṣdariyyah</i>): “perihal …”, “selagi …”</span><span class="le"><span class="nw">Verbal-noun</span> «mā» (<i>maṣdariyyah</i>): “the fact that …”, “as long as …”</span></h3>
+<p class="tb-tx"><span class="lm">«Mā» ini bersama kata kerja selepasnya sama dengan satu kata nama terbitan (maṣdar). Ada dua jenis:</span><span class="le">This «mā» with the verb after it equals one verbal noun (maṣdar). There are two kinds:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَالثَّانِي أَنْ تَكُونَ مَصْدَرِيَّةً وَهِيَ نَوْعَانِ زَمَانِيَّةٌ وَغَيْرُهَا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/387" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 399 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">(a) Bukan masa: «mā ‘anittum» = “kesusahan kamu”:</span><span class="le">(a) Not of time: «mā ‘anittum» = “your hardship”:</span></p>
+<div class="ay"><span class="v" lang="ar">… عَزِيزٌ عَلَيۡهِ <span class="hf">مَا</span> عَنِتُّمۡ …</span><span class="ref"><span class="nw">at-Taubah</span> 9:128 <a class="tb-link" href="https://www.quranwordsattartil.com/at-taubah/113-129/#a128"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… yang menjadi sangat berat kepadanya sebarang kesusahan yang ditanggung oleh kamu … (Basmeih)</span><span class="le">… for whom any hardship borne by you …</span></span></div>
+<p class="tb-tx"><span class="lm">(b) Masa: «mā dumtu ḥayyan» = “selama aku hidup”. <span class="nw">Ibn Hishām</span> memilih nama “masa” (<i>zamāniyyah</i>), bukan “tempat masa” (<i>ẓarfiyyah</i>), supaya «kullamā» juga termasuk:</span><span class="le">(b) Of time: «mā dumtu ḥayyan» = “as long as I live”. <span class="nw">Ibn Hishām</span> chose the name “of time” (<i>zamāniyyah</i>), not “adverbial” (<i>ẓarfiyyah</i>), so that «kullamā» is also included:</span></p>
+<div class="ay"><span class="v" lang="ar">… <span class="hf">مَا</span> دُمۡتُ حَيّٗا</span><span class="ref"><span class="nw">Maryam</span> 19:31 <a class="tb-link" href="https://www.quranwordsattartil.com/maryam/16-40/#a31"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… selagi aku hidup (Basmeih)</span><span class="le">… as long as I live …</span></span></div>
+<p class="tb-ar" lang="ar" dir="rtl">«وَإِنَّمَا عَدَلْتُ عَنْ قَوْلِهِمْ ظَرْفِيَّةٌ إِلَى قَوْلِي زَمَانِيَّةٌ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/389" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 401 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> menamakan dua jenis ini “waktu” dan “bukan waktu”:</span><span class="le"><span class="nw">Al-Murādī</span> names the two kinds “of time” and “not of time”:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَأَمَّا الْمَصْدَرِيَّةُ فَقِسْمَانِ: وَقْتِيَّةٌ، وَغَيْرُ وَقْتِيَّةٍ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/312" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 330 · Shamela ↗</a></p>
+</div>
+
+<div class="mean" id="kaffah">
+<h3><span class="no">6</span><span class="lm">«Mā» tambahan (<i>zā’idah</i>): yang menahan amal (<i>kāffah</i>), termasuk «innamā»</span><span class="le">Extra «mā» (<i>zā’idah</i>): the one that stops government (<i>kāffah</i>), including «innamā»</span></h3>
+<p class="tb-tx"><span class="lm">«Mā» tambahan tidak menambah makna asas ayat. <span class="nw">Ibn Hishām</span> membahagikannya kepada dua: yang menahan amal kata sebelumnya (<i>kāffah</i>), dan yang tidak.</span><span class="le">Extra «mā» does not add to the basic meaning of the sentence. <span class="nw">Ibn Hishām</span> divides it in two: the one that stops the word before it from governing (<i>kāffah</i>), and the one that does not.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«الْوَجْهُ الثَّالِثُ أَنْ تَكُونَ زَائِدَةً وَهِيَ نَوْعَانِ كَافَّةٌ وَغَيْرُ كَافَّةٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/391" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 403 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Contoh terkenal: «mā» yang bersambung dengan «inna» dan <span class="nw">saudara-saudaranya</span>. Kata nama selepas «innamā» tidak lagi berbaris atas:</span><span class="le">A <span class="nw">well-known</span> example: «mā» joined to «inna» and its sisters. The noun after «innamā» no longer takes fatḥah:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَالثَّانِي الْكَافَّةُ عَنْ عَمَلِ النَّصْبِ وَالرَّفْعِ وَهِيَ الْمُتَّصِلَةُ بِإِنَّ وَأَخَوَاتِهَا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/392" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 404 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… <span class="ul">إِنَّمَا</span> ٱللَّهُ إِلَٰهٞ وَٰحِدٞۖ …</span><span class="ref"><span class="nw">an-Nisā’</span> 4:171 <a class="tb-link" href="https://www.quranwordsattartil.com/an-nisa/153-176/#a171"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Hanyasanya Allah ialah Tuhan Yang Maha Esa … (Basmeih)</span><span class="le">… Truly Allah is the One God …</span></span></div>
+<p class="tb-ar" lang="ar" dir="rtl">«الثَّانِي: أَنْ تَكُونَ كَافَّةً. وَهِيَ تَقَعُ بَعْدَ إِنَّ وَأَخَوَاتِهَا.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/315" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 333 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Tetapi tidak semua «inna + mā» ialah «innamā». Dalam ayat ini «mā» bermakna “yang” (kata nama), dan «inna» tetap beramal. Kata <span class="nw">Ibn Hishām</span>, «mā» dalam <span class="nw">contoh-contoh</span> ini kata nama dengan sepakat:</span><span class="le">But not every «inna + mā» is «innamā». In this verse «mā» means “what” (a noun), and «inna» still governs. <span class="nw">Ibn Hishām</span> says «mā» in these examples is a noun by agreement:</span></p>
+<div class="ay"><span class="v" lang="ar">إِنَّ <span class="is">مَا</span> تُوعَدُونَ لَأٓتٖۖ …</span><span class="ref"><span class="nw">al-An‘ām</span> 6:134 <a class="tb-link" href="https://www.quranwordsattartil.com/al-anam/132-148/#a134"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Sesungguhnya apa yang dijanjikan kepada kamu (hari kiamat dan balasannya) tetap akan datang … (Basmeih)</span><span class="le">Truly what you are promised (the Day of Resurrection and its recompense) will certainly come …</span></span></div>
+<p class="tb-ar" lang="ar" dir="rtl">«مَا فِي ذَلِكَ كُلِّهِ اسْمٌ بِاتِّفَاقٍ وَالْحَرْفُ عَامِلٌ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/393" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 405 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> juga menyebut Fāṭir 35:28: para ahli nahu memastikan «mā» di sana <i>kāffah</i>, tetapi kata beliau tidak mustahil ia bermakna “yang” (<a class="tb-link" href="https://shamela.ws/book/6972/393" target="_blank" rel="noopener">h. 405 · Shamela ↗</a>). Beza «inna» dan «innamā» dalam <span class="nw">at-Taghabun</span> 64:14–15 ada di halaman <a class="tb-link" href="../inna/#banding">«inna», bahagian C ›</a></span><span class="le"><span class="nw">Ibn Hishām</span> also mentions Fāṭir 35:28: the grammarians are certain the «mā» there is <i>kāffah</i>, but he says it is not impossible that it means “the one who” (<a class="tb-link" href="https://shamela.ws/book/6972/393" target="_blank" rel="noopener">p. 405 · Shamela ↗</a>). The difference between «inna» and «innamā» in <span class="nw">at-Taghabun</span> 64:14–15 is on the <a class="tb-link" href="../inna/#banding">«inna» page, part C ›</a></span></p>
+<p class="tb-tx"><span class="lm">«Mā» <i>kāffah</i> juga menahan amal huruf jarr, seperti «rubba» dan kāf:</span><span class="le"><i>Kāffah</i> «mā» also stops a ḥarf jarr from governing, such as «rubba» and kāf:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«الثَّالِثُ الْكَافَّةُ عَنْ عَمَلِ الْجَرِّ وَتَتَّصِلُ بِأَحْرُفٍ وَظُرُوفٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/395" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 407 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar"><span class="ul">رُّبَمَا</span> يَوَدُّ ٱلَّذِينَ كَفَرُواْ لَوۡ كَانُواْ مُسۡلِمِينَ</span><span class="ref"><span class="nw">al-Ḥijr</span> 15:2 <a class="tb-link" href="https://www.quranwordsattartil.com/al-hijr/#a2"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Ada masanya <span class="nw">orang-orang</span> yang kafir merasa ingin kalaulah mereka telah menjadi <span class="nw">orang-orang</span> Islam (Basmeih)</span><span class="le">There are times when those who disbelieve feel a wish: if only they had become Muslims.</span></span></div>
+</div>
+
+<div class="mean">
+<h3><span class="no">7</span><span class="lm">«Mā» tambahan yang tidak menahan amal: penguat</span><span class="le">Extra «mā» that does not stop government: emphasis</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«وَغَيْرُ الْكَافَّةِ نَوْعَانِ عِوَضٌ وَغَيْرُ عِوَضٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/398" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 410 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Antara tempatnya, selepas huruf jarr:</span><span class="le">One of its places is after a ḥarf jarr:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَبَعْدَ الْخَافِضِ حَرْفًا كَانَ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/399" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 411 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar"><span class="ul">فَبِمَا</span> رَحۡمَةٖ مِّنَ ٱللَّهِ لِنتَ لَهُمۡۖ …</span><span class="ref"><span class="nw">Āli ‘Imrān</span> 3:159 <a class="tb-link" href="https://www.quranwordsattartil.com/ali-imran/149-175/#a159"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Maka dengan sebab rahmat (yang <span class="nw">melimpah-limpah</span>) dari Allah (kepadamu wahai Muhammad), engkau telah bersikap <span class="nw">lemah-lembut</span> kepada mereka … (Basmeih)</span><span class="le">So it is by an (abundant) mercy from Allah (to you, O Muhammad) that you have been gentle with them …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> menyebut ayat ini juga, sebagai «mā» tambahan <span class="nw">semata-mata</span> untuk menguatkan:</span><span class="le"><span class="nw">Al-Murādī</span> also cites this verse, as extra «mā» purely for emphasis:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَأَمَّا الزَّائِدَةُ فَلَهَا أَرْبَعَةُ أَقْسَامٍ: الْأَوَّلُ: أَنْ تَكُونَ زَائِدَةً لِمُجَرَّدِ التَّوْكِيدِ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/314" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 332 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="our">Huraian kami:</span> “tambahan” ialah istilah nahu: «mā» ini tidak mengubah makna asas ayat, tetapi menguatkannya. <span class="nw">Kedua-dua</span> pengarang menghuraikannya sebagai penguat.</span><span class="le"><span class="our">Our explanation:</span> “extra” is a grammar term: this «mā» does not change the basic meaning, but strengthens it. Both authors explain it as emphasis.</span></p>
+<p class="tb-tx"><span class="lm">Contoh lain yang dibawa <span class="nw">Ibn Hishām</span>, dengan nukilan <span class="nw">az-Zajjāj</span>:</span><span class="le">Another example <span class="nw">Ibn Hishām</span> gives, with a quotation from <span class="nw">az-Zajjāj</span>:</span></p>
+<div class="ay"><span class="v" lang="ar">إِنَّ ٱللَّهَ لَا يَسۡتَحۡيِۦٓ أَن يَضۡرِبَ مَثَلٗا <span class="hf">مَّا</span> بَعُوضَةٗ …</span><span class="ref"><span class="nw">al-Baqarah</span> 2:26 <a class="tb-link" href="https://www.quranwordsattartil.com/al-baqarah/21-39/#a26"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Sesungguhnya Allah tidak malu membuat perbandingan apa sahaja, (seperti) nyamuk … (Basmeih)</span><span class="le">Indeed Allah is not shy to make a comparison of any kind, (such as) a gnat …</span></span></div>
+<p class="tb-ar" lang="ar" dir="rtl">«قَالَ الزَّجَّاجُ مَا حَرْفٌ زَائِدٌ لِلتَّوْكِيدِ عِنْدَ جَمِيعِ الْبَصْرِيِّينَ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">az-Zajjāj</span>, dipetik <span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">az-Zajjāj</span>, quoted by <span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/401" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 413 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> turut menukil pendapat lain («qīla»): «mā» di sini kata nama nakirah yang menjadi sifat bagi «mathalan» atau badal daripadanya. <span class="our">Huraian kami:</span> terjemahan Basmeih “apa sahaja” selari dengan pendapat ini. Warna merah di sini mengikut pendapat <span class="nw">az-Zajjāj</span> (<a class="tb-link" href="https://shamela.ws/book/6972/401" target="_blank" rel="noopener">h. 413 · Shamela ↗</a>).</span><span class="le"><span class="nw">Ibn Hishām</span> also reports another view («qīla»): the «mā» here is an indefinite noun describing «mathalan» or standing in apposition to it. <span class="our">Our explanation:</span> the translation “of any kind” fits this view. The red colour here follows <span class="nw">az-Zajjāj’s</span> view (<a class="tb-link" href="https://shamela.ws/book/6972/401" target="_blank" rel="noopener">p. 413 · Shamela ↗</a>).</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">8</span><span class="lm">«Mā» ganti (<i>‘iwaḍ</i>) dan «mā» isyarat sifat</span><span class="le">Substitute «mā» (<i>‘iwaḍ</i>) and «mā» hinting at a quality</span></h3>
+<p class="tb-tx"><span class="lm">«Mā» tambahan juga boleh menjadi ganti bagi perkataan yang dibuang. <span class="nw">Al-Murādī</span>:</span><span class="le">Extra «mā» can also stand in for a dropped word. <span class="nw">Al-Murādī</span>:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«الثَّالِثُ: أَنْ تَكُونَ عِوَضًا. وَهِيَ ضَرْبَانِ: عِوَضٌ مِنْ فِعْلٍ، وَعِوَضٌ مِنَ الْإِضَافَةِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/315" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 333 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> menambah satu jenis yang tidak diasingkan oleh <span class="nw">Ibn Hishām</span>: «mā» yang memberi isyarat kepada sifat yang sesuai, seperti «<span class="nw">li-amrin</span> mā» (“kerana satu perkara [besar]”):</span><span class="le"><span class="nw">Al-Murādī</span> adds a kind <span class="nw">Ibn Hishām</span> does not list separately: «mā» that hints at a fitting quality, as in «<span class="nw">li-amrin</span> mā» (“for some [great] matter”):</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«الرَّابِعُ: أَنْ تَكُونَ مُنَبِّهَةً عَلَى وَصْفٍ لَائِقٍ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/316" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 334 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Contoh <span class="nw">kedua-dua</span> jenis ini bukan ayat <span class="nw">al-Qur’an</span>.</span><span class="le">The examples for these two kinds are not Qur’anic verses.</span></p>
+</div>
+</div>
+
+<!-- B. ON OUR PAGES -->
+<div class="card" id="laman">
+<h2><span class="lm">B. «Mā» dalam kotak laman kami</span><span class="le">B. «Mā» in our verse boxes</span></h2>
+<p class="tb-tx muted"><span class="lm">Kotak ini sudah terbit.</span><span class="le">This box is already published.</span></p>
+<p class="tb-h"><span class="lm">«Innamā» (lihat jenis 6)</span><span class="le">«Innamā» (see kind 6)</span></p>
+<div class="ex"><span class=q><span class="tb-q" lang="ar" dir="rtl">إِنَّمَآ أَمۡوَٰلُكُمۡ</span></span><span class="rf"><span style="white-space:nowrap"><span class="nw">at-Taghabun</span></span> 64:15</span> — <span class="lm">«Innamā» membawa makna “tiada lain melainkan ujian”: pengkhususan (qaṣr) untuk menguatkan makna (<span class="nw">Ibn ‘Āshūr</span>).</span><span class="le" lang="en">«Innamā» means “nothing but a trial”: restriction (qaṣr) that intensifies the meaning (<span class="nw">Ibn ‘Āshūr</span>).</span> <a href="https://www.quranwordsattartil.com/at-taghabun/#a15"><span class="lm">Baca kotak ›</span><span class="le">Read the box ›</span></a></div>
+</div>
+
+<!-- C. COMPARE -->
+<div class="card" id="banding">
+<h2><span class="lm">C. Satu kata, huruf berbeza: «mā / lā»</span><span class="le">C. One word, different particles: «mā / lā»</span></h2>
+<p class="tb-tx"><span class="lm">«Mā» dan «lā» <span class="nw">kedua-duanya</span> boleh menafikan kata kerja kala kini (<i>muḍāri‘</i>), tanpa mengubah barisnya. Bezanya pada masa yang dinafikan.</span><span class="le">«Mā» and «lā» can both negate the <span class="nw">present-tense</span> verb (<i>muḍāri‘</i>), without changing its ending. They differ in the time they negate.</span></p>
+
+<div class="mean">
+<h3><span class="no">mā</span><span class="lm">masa kini, menurut kebanyakan ulama</span><span class="le">the present, for most scholars</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«وَإِذَا نَفَتِ الْمُضَارِعَ تَخَلَّصَ عِنْدَ الْجُمْهُورِ لِلْحَالِ وَرَدَّ عَلَيْهِمُ ابْنُ مَالِكٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/387" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 399 · Shamela ↗</a></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَإِذَا دَخَلَتْ عَلَى الْمُضَارِعِ خَلَّصَتْهُ لِلْحَالِ، عِنْدَ الْأَكْثَرِ. قَالَ ابْنُ مَالِكٍ: وَلَيْسَ كَذَلِكَ، بَلْ قَدْ يَكُونُ مُسْتَقْبَلًا، عَلَى قِلَّةٍ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/311" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 329 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Maksudnya: kebanyakan ulama berkata «mā» menjadikan kata kerja itu untuk masa kini. <span class="nw">Ibn Mālik</span> berkata ia <span class="nw">kadang-kadang</span> untuk masa depan, dengan dalil ayat ini:</span><span class="le">That is: most scholars say «mā» points the verb to the present. <span class="nw">Ibn Mālik</span> says it is sometimes for the future, citing this verse:</span></p>
+<div class="ay"><span class="v" lang="ar">… قُلۡ <span class="hf">مَا</span> يَكُونُ لِيٓ أَنۡ أُبَدِّلَهُۥ مِن تِلۡقَآيِٕ نَفۡسِيٓۖ …</span><span class="ref"><span class="nw">Yūnus</span> 10:15 <a class="tb-link" href="https://www.quranwordsattartil.com/yunus/#a15"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Katakanlah (wahai Muhammad): "Aku tidak berhak menukarkannya dengan kemahuanku sendiri … (Basmeih)</span><span class="le">… Say (O Muhammad): “I have no right to change it by my own wish …</span></span></div>
+<p class="tb-tx"><span class="lm">Jawapan yang dinukil <span class="nw">Ibn Hishām</span>: «mā» untuk masa kini selagi tiada tanda dalam ayat yang menunjukkan sebaliknya:</span><span class="le">The answer <span class="nw">Ibn Hishām</span> reports: «mā» is for the present as long as nothing in the sentence points otherwise:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَأُجِيبَ بِأَنَّ شَرْطَ كَوْنِهِ لِلْحَالِ انْتِفَاءُ قَرِينَةِ خِلَافِهِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/387" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 399 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">lā</span><span class="lm">masa depan, menurut kebanyakan ulama · <a class="tb-link" href="../la/">halaman «lā» ›</a></span><span class="le">the future, for most scholars · <a class="tb-link" href="../la/">the «lā» page ›</a></span></h3>
+<p class="tb-tx"><span class="lm"><span class="nw">Kedua-dua</span> kitab berkata «lā» menjadikan kata kerja kala kini untuk masa depan, menurut kebanyakan ulama; <span class="nw">Ibn Mālik</span> juga menyalahi mereka di sini (<a class="tb-link" href="https://shamela.ws/book/6972/310" target="_blank" rel="noopener">Mughnī h. 322 · Shamela ↗</a>; <a class="tb-link" href="https://shamela.ws/book/26099/278" target="_blank" rel="noopener"><span class="nw">al-Janā</span> h. 296 · Shamela ↗</a>). Petikannya ada di <a class="tb-link" href="../la/#banding">halaman «lā», bahagian C ›</a></span><span class="le">Both books say «lā» points the <span class="nw">present-tense</span> verb to the future, for most scholars; <span class="nw">Ibn Mālik</span> disagrees with them here too (<a class="tb-link" href="https://shamela.ws/book/6972/310" target="_blank" rel="noopener">Mughnī p. 322 · Shamela ↗</a>; <a class="tb-link" href="https://shamela.ws/book/26099/278" target="_blank" rel="noopener"><span class="nw">al-Janā</span> p. 296 · Shamela ↗</a>). The quotations are on the <a class="tb-link" href="../la/#banding">«lā» page, part C ›</a></span></p>
+<p class="tb-tx"><span class="lm"><span class="our">Huraian kami:</span> jadi, menurut kebanyakan ulama, «mā yaf‘alu» = “dia tidak buat (sekarang)”, dan «lā yaf‘alu» = “dia tidak akan buat”. <span class="nw">Ibn Mālik</span> tidak menerima <span class="nw">kedua-dua</span> kaedah ini secara mutlak.</span><span class="le"><span class="our">Our explanation:</span> so, for most scholars, «mā yaf‘alu» = “he is not doing (now)”, and «lā yaf‘alu» = “he will not do”. <span class="nw">Ibn Mālik</span> does not accept either rule as absolute.</span></p>
+</div>
+</div>
+
+<!-- D. KHILAF -->
+<div class="card" id="khilaf">
+<h2><span class="lm">D. Pendapat yang diperselisihkan</span><span class="le">D. Disputed views</span></h2>
+<p class="tb-tx muted"><span class="lm">Pendapat di bawah dinukil seperti dalam sumber, tanpa kami pilih salah satunya.</span><span class="le">The views below are reported as in the sources; we do not choose between them.</span></p>
+
+<div class="mean kh">
+<h3><span class="no">D1</span><span class="lm">«Mā» dalam «innamā»: menafikan?</span><span class="le">The «mā» in «innamā»: does it negate?</span></h3>
+<p class="tb-tx"><span class="lm">Sekumpulan ahli uṣūl dan ahli balāghah berkata «mā» dalam «innamā» menafikan, dan itulah sebab «innamā» bermakna “hanya” (<i>ḥaṣr</i>): «inna» menetapkan, «mā» menafikan:</span><span class="le">A group of legal theorists and rhetoricians say the «mā» in «innamā» negates, and that this is why «innamā» means “only” (<i>ḥaṣr</i>): «inna» affirms, «mā» negates:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَزَعَمَ جَمَاعَةٌ مِنَ الْأُصُولِيِّينَ وَالْبَيَانِيِّينَ أَنَّ مَا الْكَافَّةَ الَّتِي مَعَ إِنَّ نَافِيَةٌ وَأَنَّ ذَلِكَ سَبَبُ إِفَادَتِهَا لِلْحَصْرِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/394" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 406 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> menolaknya: «inna» untuk menguatkan, bukan untuk menetapkan, dan «mā» di sini sama seperti dalam «<span class="nw">layta-mā</span>» dan «<span class="nw">ka’anna-mā</span>»:</span><span class="le"><span class="nw">Ibn Hishām</span> rejects it: «inna» is for emphasis, not affirmation, and the «mā» here is the same as in «<span class="nw">layta-mā</span>» and «<span class="nw">ka’anna-mā</span>»:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَهَذَا الْبَحْثُ مَبْنِيٌّ عَلَى مُقَدِّمَتَيْنِ بَاطِلَتَيْنِ بِإِجْمَاعِ النَّحْوِيِّينَ إِذْ لَيْسَتْ إِنَّ لِلْإِثْبَاتِ وَإِنَّمَا هِيَ لِتَوْكِيدِ الْكَلَامِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/394" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 406 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Beliau juga berkata pendapat itu bukan pendapat <span class="nw">al-Fārisī</span>:</span><span class="le">He also says the view is not <span class="nw">al-Fārisī’s</span>:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَلَمْ يَقُلْ ذَلِكَ الْفَارِسِيُّ لَا فِي الشِّيرَازِيَّاتِ وَلَا فِي غَيْرِهَا وَلَا قَالَهُ نَحْوِيٌّ غَيْرُهُ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/395" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 407 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Kata beliau, yang <span class="nw">al-Fārisī</span> sebut ialah orang Arab melayan «innamā» seperti “tidak … melainkan” dalam satu hukum nahu (memisahkan kata ganti):</span><span class="le">He says what <span class="nw">al-Fārisī</span> stated is that the Arabs treat «innamā» like “not … except” in one grammar rule (separating the pronoun):</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«إِنَّ الْعَرَبَ عَامَلُوا إِنَّمَا مُعَامَلَةَ النَّفْيِ وَإِلَّا فِي فَصْلِ الضَّمِيرِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/395" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 407 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> pula menukil <span class="nw">al-Qarāfī</span> bahawa <span class="nw">al-Fārisī</span> ada menukil, dalam <i><span class="nw">al-Shīrāziyyāt</span></i>, bahawa «mā» dalam «innamā» untuk menafikan. Dua nukilan ini berbeza; kami menukil <span class="nw">kedua-duanya</span>. Lihat halaman <a class="tb-link" href="../inna/#khilaf">«inna», bahagian D ›</a></span><span class="le"><span class="nw">Al-Murādī</span>, however, reports <span class="nw">al-Qarāfī</span> saying that <span class="nw">al-Fārisī</span> reported, in <i><span class="nw">al-Shīrāziyyāt</span></i>, that the «mā» in «innamā» negates. These two reports differ; we report both. See the <a class="tb-link" href="../inna/#khilaf">«inna» page, part D ›</a></span></p>
+<p class="tb-tx"><span class="lm">Satu lagi pendapat, dinukil <span class="nw">Ibn Hishām</span>: «mā» bersama «inna» dan <span class="nw">saudara-saudaranya</span> ialah kata nama yang samar, seperti kata ganti <i>sha’n</i>:</span><span class="le">Another view, reported by <span class="nw">Ibn Hishām</span>: «mā» with «inna» and its sisters is a vague noun, like the pronoun of <i>sha’n</i>:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَزَعَمَ ابْنُ دُرُسْتُوَيْهِ وَبَعْضُ الْكُوفِيِّينَ أَنَّ مَا مَعَ هَذِهِ الْحُرُوفِ اسْمٌ مُبْهَمٌ بِمَنْزِلَةِ ضَمِيرِ الشَّأْنِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/392" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 404 · Shamela ↗</a></p>
+</div>
+
+<div class="mean kh">
+<h3><span class="no">D2</span><span class="lm">«<span class="nw">Fa-bi-mā</span> raḥmatin» (Āli ‘Imrān 3:159): tambahan, atau soalan hairan?</span><span class="le">«<span class="nw">Fa-bi-mā</span> raḥmatin» (Āli ‘Imrān 3:159): extra, or a question of wonder?</span></h3>
+<p class="tb-tx"><span class="lm">Sekumpulan ulama, antaranya Fakhr <span class="nw">ad-Dīn</span> (<span class="nw">ar-Rāzī</span>), berkata «mā» di sini soalan hairan: “dengan rahmat yang bagaimanakah …!” <span class="nw">Ibn Hishām</span> menukilnya lalu menolaknya, kerana alif «mā» tidak dibuang selepas huruf jarr:</span><span class="le">A group of scholars, among them Fakhr <span class="nw">ad-Dīn</span> (<span class="nw">ar-Rāzī</span>), say the «mā» here is a question of wonder: “by what a mercy …!” <span class="nw">Ibn Hishām</span> reports it and rejects it, because the alif of «mā» is not dropped after the ḥarf jarr:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«إِنَّهَا لِلِاسْتِفْهَامِ التَّعَجُّبِيِّ أَيْ فَبِأَيِّ رَحْمَةٍ وَيَرُدُّهُ ثُبُوتُ الْأَلِفِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/382" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 394 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Beliau juga berkata baris bawah pada «raḥmatin» tidak dapat dijelaskan menurut pendapat itu. Pendapat <span class="nw">Ibn Hishām</span> dan <span class="nw">al-Murādī</span>: «mā» tambahan (jenis 7). <span class="nw">Ibn ‘Āshūr</span> pula menghuraikan faedahnya: «mā» ditambah untuk menguatkan ayat dengan makna “hanya” (<i>qaṣr</i>) yang ada padanya:</span><span class="le">He also says the genitive on «raḥmatin» cannot be explained on that view. <span class="nw">Ibn Hishām’s</span> and <span class="nw">al-Murādī</span>’s view: extra «mā» (kind 7). <span class="nw">Ibn ‘Āshūr</span> explains its benefit: «mā» is added to strengthen the sentence with the sense of “only” (<i>qaṣr</i>) it carries:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَزِيدَتْ (مَا) بَعْدَ بَاءِ الْجَرِّ لِتَأْكِيدِ الْجُمْلَةِ بِمَا فِيهِ مِنَ الْقَصْرِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn ‘Āshūr</span>,</span><span class="le"><span class="nw">Ibn ‘Āshūr</span>,</span> <i><span class="nw">at-Taḥrīr</span> wa <span class="nw">at-Tanwīr</span></i>, <a class="tb-link" href="https://shamela.ws/book/9776/1704" target="_blank" rel="noopener"><span class="lm"></span><span class="le"></span> 4/144 · Shamela ↗</a></p>
+</div>
+
+<div class="mean kh">
+<h3><span class="no">D3</span><span class="lm">«Mā» maṣdar: huruf atau kata nama?</span><span class="le"><span class="nw">Verbal-noun</span> «mā»: particle or noun?</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«وَمَذْهَبُ سِيبَوَيْهِ وَالْجُمْهُورِ أَنَّ مَا الْمَصْدَرِيَّةَ حَرْفٌ، فَلَا يَعُودُ عَلَيْهَا ضَمِيرٌ، مِنْ صِلَتِهَا. وَذَهَبَ الْأَخْفَشُ، وَابْنُ السَّرَّاجِ، وَجَمَاعَةٌ مِنَ الْكُوفِيِّينَ، إِلَى أَنَّهَا اسْمٌ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/314" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 332 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Maksudnya: Sībawayh dan jumhur berkata ia huruf; <span class="nw">al-Akhfash</span>, <span class="nw">Ibn as-Sarrāj</span> dan sebahagian ulama Kufah berkata ia kata nama.</span><span class="le">That is: Sībawayh and the majority say it is a particle; <span class="nw">al-Akhfash</span>, <span class="nw">Ibn as-Sarrāj</span> and some Kufans say it is a noun.</span></p>
+</div>
+</div>
+
+<!-- E. FURTHER READING -->
+<div class="card" id="rujukan">
+<h2><span class="lm">E. Rujukan lanjut</span><span class="le">E. Further reading</span></h2>
+<ul class="tb-tx">
+<li><span class="nw">al-Murādī,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span> fī Ḥurūf <span class="nw">al-Ma‘ānī</span></i>, <span class="lm">bab «mā»,</span><span class="le">entry «mā»,</span> <a class="tb-link" href="https://shamela.ws/book/26099/304" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">pp.</span> 322–341 · Shamela ↗</a></li>
+<li><span class="nw">Ibn Hishām</span>, <i>Mughnī <span class="nw">al-Labīb</span> ‘an Kutub <span class="nw">al-A‘ārīb</span></i>, <span class="lm">bab «mā»,</span><span class="le">entry «mā»,</span> <a class="tb-link" href="https://shamela.ws/book/6972/378" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">pp.</span> 390–419 · Shamela ↗</a></li>
+<li><span class="nw">Ibn ‘Āshūr</span>, <i><span class="nw">at-Taḥrīr</span> wa <span class="nw">at-Tanwīr</span></i>, <span class="lm">tafsir Āli ‘Imrān 3:159,</span><span class="le">on Āli ‘Imrān 3:159,</span> <a class="tb-link" href="https://shamela.ws/book/9776/1704" target="_blank" rel="noopener">4/144 · Shamela ↗</a></li>
+<li><span class="lm">Muḥammad Ḥasan <span class="nw">al-Sharīf</span>, <i>Mu‘jam Ḥurūf <span class="nw">al-Ma‘ānī</span> fī <span class="nw">al-Qur’ān</span> <span class="nw">al-Karīm</span></i> (Beirut: Mu’assasat <span class="nw">al-Risālah</span>, 1996), h. 964–1019 (cetakan; tiada di Shamela). Beliau membahagikan «mā» kepada kata nama (syarat, soalan, “yang”, nakirah) dan huruf (menafikan, Ḥijāziyyah, maṣdar, penguat dan <i>kāffah</i>), lalu menyenaraikan setiap «mā» dalam <span class="nw">al-Qur’an</span> mengikut susunan mushaf dengan 17 kod, termasuk kod bagi tempat yang boleh dianalisis dua cara. Beliau menamakan «mā» tambahan “penguat” (<i>mu’akkidah</i>). Menurut beliau, Yūsuf 12:31 dan <span class="nw">al-Mujādalah</span> 58:2 ialah dua ayat yang pasti «mā» Ḥijāziyyah.</span><span class="le">Muḥammad Ḥasan <span class="nw">al-Sharīf</span>, <i>Mu‘jam Ḥurūf <span class="nw">al-Ma‘ānī</span> fī <span class="nw">al-Qur’ān</span> <span class="nw">al-Karīm</span></i> (Beirut: Mu’assasat <span class="nw">al-Risālah</span>, 1996), pp. 964–1019 (print; not in Shamela). He divides «mā» into nouns (conditional, question, “what”, indefinite) and particles (negating, Ḥijāzī, <span class="nw">verbal-noun</span>, emphatic and <i>kāffah</i>), then lists every «mā» in the Qur’an in mushaf order with 17 codes, including codes for places open to two grammatical analyses. He calls extra «mā» “emphatic” (<i>mu’akkidah</i>). In his view, Yūsuf 12:31 and <span class="nw">al-Mujādalah</span> 58:2 are the two verses that are certainly Ḥijāzī «mā».</span></li>
+</ul>
+</div>
+<footer><span class="lm">AtTartil Quranic Institute, Singapura · Disusun oleh Ustaz Zulkiflee Bachik</span><span class="le">AtTartil Quranic Institute, Singapore · Compiled by Ustaz Zulkiflee Bachik</span></footer>
+</div></div>
+<script>try{if(localStorage.getItem('yq-lang2')==='en')document.getElementById('lg-en').checked=true;document.querySelectorAll('input[name=lg]').forEach(function(e){e.addEventListener('change',function(){try{localStorage.setItem('yq-lang2',document.getElementById('lg-en').checked?'en':'ms')}catch(x){}})})}catch(e){}</script>
+</body>
+</html>
+
