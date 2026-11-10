@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Min مِنْ · Ḥurūf al-Ma‘ānī · AtTartil</title>
+<meta name="description" content="Ḥurūf al-Ma‘ānī: «min» (مِنْ) — lima belas makna menurut Ibn Hishām, contoh dalam al-Qur’an, beza «yaghfir lakum min dhunūbikum / dhunūbakum», dan beza «min» dengan «man». AtTartil Quranic Institute.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0F1A0C;--card:#16250F;--line:#2C4220;--ink:#F3EFE0;--muted:#B9C2A8;--gold:#E8C547;--isim:#7BE05A;--harf:#FF6B6B;--fiil:#FFD83D}
+#th:checked ~ .pg{--bg:#F6F4EA;--card:#FFFFFF;--line:#D9D3BC;--ink:#1D2414;--muted:#55604A;--gold:#7A5C00;--isim:#1F7A1F;--harf:#C0281C;--fiil:#A05A00}
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 Manrope,system-ui,sans-serif}
+.pg{background:var(--bg);color:var(--ink);min-height:100vh}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+.sr{position:fixed;top:0;opacity:0;width:1px;height:1px;pointer-events:none}
+.le{display:none}#lg-en:checked ~ .pg .le{display:inline}#lg-en:checked ~ .pg .lm{display:none}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-bottom:8px}
+.bar a{color:var(--gold);text-decoration:none;font-weight:700}
+.bar label{border:1px solid var(--line);border-radius:999px;padding:4px 12px;cursor:pointer;color:var(--ink);font-size:14px}
+#lg-ms:checked ~ .pg label[for=lg-ms],#lg-en:checked ~ .pg label[for=lg-en]{border-color:var(--gold);color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:14px 0}
+h1{font-size:30px;margin:4px 0 6px;line-height:1.25}.muted{color:var(--muted)}
+h2{font-size:22px;margin:0 0 6px;line-height:1.3}
+h3{font-size:18px;margin:0 0 4px}
+footer{margin:26px 0 10px;color:var(--muted);font-size:14px;text-align:center}
+.draf{border:2px dashed var(--gold);border-radius:14px;padding:10px 14px;margin:10px 0;font-size:15px}
+.big{font-family:Amiri,serif;font-size:64px;line-height:1.6;color:var(--harf);display:block;text-align:center;direction:rtl}
+.tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:6px 0 4px}
+.tag{border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:14px;color:var(--muted)}
+.toc a{color:var(--gold);text-decoration:none;font-weight:700}
+.toc ol{margin:6px 0 0;padding-left:22px}
+.tb-h{font-weight:800;color:var(--gold);margin:16px 0 4px}.tb-tx{margin:6px 0}
+.tb-ar{font-family:Amiri,serif;font-size:22px;line-height:1.9;color:var(--isim);margin:10px 0 2px}
+.tb-src{font-size:14px;color:var(--muted);margin:0 0 10px}
+.tb-link{color:var(--gold);white-space:nowrap}
+.mean{border-left:4px solid var(--harf);padding:12px 16px;margin:14px 0;background:var(--card);border-radius:0 14px 14px 0;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mean .no{display:inline-block;background:var(--harf);color:#1D2414;border-radius:999px;padding:0 10px;font-weight:800;font-size:14px;margin-right:6px}
+#th:checked ~ .pg .mean .no{color:#FFFFFF}
+.kh{border-left-color:var(--gold)}.kh .no{background:var(--gold)}
+.ay{background:transparent;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:10px 0}
+.ay .v{font-family:Amiri,serif;font-size:26px;line-height:2;direction:rtl;text-align:right;display:block}
+.ay .ref{font-weight:800;font-size:14px;color:var(--gold)}
+.ay .tr{font-size:15px;color:var(--muted);display:block}
+.hf{color:var(--harf)}.is{color:var(--isim)}.fi{color:var(--fiil)}
+.ex{border-left:4px solid var(--gold);padding:10px 14px;margin:12px 0;background:var(--card);border-radius:0 12px 12px 0}
+.ex .q{font-family:Amiri,serif;font-size:24px;direction:rtl;text-align:right;color:var(--ink);display:block}
+.ex .rf{font-weight:800}
+.ex a{color:var(--gold);font-weight:700;text-decoration:none;white-space:nowrap}
+.our{font-style:italic;color:var(--muted)}
+.nw{white-space:nowrap}
+.hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-top:10px}
+.hk{display:block;border:1px solid var(--line);border-radius:14px;padding:10px 12px;text-align:center;color:var(--muted);text-decoration:none}
+.hk .ar{display:block;font-family:Amiri,serif;font-size:30px;line-height:1.7;color:var(--harf)}
+.hk b{display:block;font-size:15px}.hk i{display:block;font-style:normal;font-size:13px}
+a.hk.on{border-color:var(--gold);color:var(--ink)}a.hk.on b{color:var(--gold)}
+.ul{text-decoration:underline;text-decoration-color:var(--harf);text-decoration-thickness:2px;text-underline-offset:.7em;text-decoration-skip-ink:none}
+.ay .v{line-height:2.3}
+.tb-tx:has(.ul){line-height:1.9}
+</style>
+</head>
+<body>
+<input type="radio" name="lg" id="lg-ms" class="sr" checked aria-label="Bahasa Melayu">
+<input type="radio" name="lg" id="lg-en" class="sr" aria-label="English">
+<input type="checkbox" id="th" class="sr" aria-label="Tema cerah / Light theme">
+<div class="pg"><div class="wrap">
+<div class="bar"><a href="../"><span class="lm">‹ Ḥurūf <span class="nw">al-Ma‘ānī</span></span><span class="le">‹ Ḥurūf <span class="nw">al-Ma‘ānī</span></span></a>
+<span><label for="lg-ms">BM</label> <label for="lg-en">EN</label> <label for="th">☀︎/☾</label></span></div>
+
+<!-- 1. HEADWORD -->
+<div class="card">
+<span class="big" lang="ar">مِنْ</span>
+<h1 style="text-align:center">Min</h1>
+<div class="tags">
+<span class="tag"><span class="lm">huruf (ḥarf)</span><span class="le">particle (ḥarf)</span></span>
+<span class="tag"><span class="lm">huruf jarr (kata sendi)</span><span class="le">ḥarf jarr (preposition)</span></span>
+</div>
+<p class="tb-h"><span class="lm">Ringkasnya</span><span class="le">In short</span></p>
+<p class="tb-tx"><span class="lm">«Min» ialah huruf jarr (kata sendi yang menjadikan kata selepasnya berbaris bawah). Makna yang paling kerap ialah “dari”, iaitu titik mula sesuatu. Kata <span class="nw">al-Murādī</span>, ia ada dua jenis: yang membawa makna, dan yang tambahan (<i>zā’idah</i>) untuk menegaskan.</span><span class="le">«Min» is a ḥarf jarr (a preposition that puts the next word in the genitive). Its most common meaning is “from”, the starting point of something. <span class="nw">Al-Murādī</span> says it is of two kinds: one that carries a meaning, and an extra one (<i>zā’idah</i>) that adds emphasis.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«حَرْفُ جَرٍّ، يَكُونُ زَائِدًا، وَغَيْرَ زَائِدٍ.»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/290" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 308 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> menyebut lima belas makna bagi «min»:</span><span class="le"><span class="nw">Ibn Hishām</span> lists fifteen meanings for «min»:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«تَأْتِي عَلَى خَمْسَةَ عَشَرَ وَجْهًا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/407" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 419 · Shamela ↗</a></p>
+<p class="tb-tx muted"><span class="lm">Dalam ayat di bawah, «min» diwarnakan merah. Bentuk yang bersambung dengan kata lain, seperti «مِّنۡهُم» dan «مِّمَّا», digaris bawah merah apabila ia yang dibincangkan. Kata nama «man» (مَنۡ, “siapa, sesiapa”) diwarnakan hijau.</span><span class="le">In the verses below, «min» is coloured red. Forms joined to another word, such as «مِّنۡهُم» and «مِّمَّا», are underlined in red when they are the point under discussion. The noun «man» (مَنۡ, “who, whoever”) is coloured green.</span></p>
+</div>
+
+<!-- CONTENTS -->
+<div class="card toc"><b><span class="lm">Kandungan</span><span class="le">Contents</span></b>
+<ol>
+<li><a href="#makna"><span class="lm">A. <span class="nw">Makna-makna</span> «min»</span><span class="le">A. The meanings of «min»</span></a></li>
+<li><a href="#laman"><span class="lm">B. «Min» dalam kotak laman kami</span><span class="le">B. «Min» in our verse boxes</span></a></li>
+<li><a href="#banding"><span class="lm">C. Satu kata, huruf berbeza: «yaghfir lakum (min) dhunūbikum»</span><span class="le">C. One word, different particles: «yaghfir lakum (min) dhunūbikum»</span></a></li>
+<li><a href="#keliru"><span class="lm">D. Jangan keliru: «min» dan «man»</span><span class="le">D. Do not confuse: «min» and «man»</span></a></li>
+<li><a href="#khilaf"><span class="lm">E. Pendapat yang diperselisihkan</span><span class="le">E. Disputed views</span></a></li>
+<li><a href="#rujukan"><span class="lm">F. Rujukan lanjut</span><span class="le">F. Further reading</span></a></li>
+</ol></div>
+
+<!-- A. MEANINGS -->
+<div class="card" id="makna">
+<h2><span class="lm">A. <span class="nw">Makna-makna</span> «min»</span><span class="le">A. The meanings of «min»</span></h2>
+<p class="tb-tx muted"><span class="lm">Susunan dan nombor ikut <span class="nw">Ibn Hishām</span> (15 makna, termasuk dua jenis «min» tambahan). <span class="nw">Al-Murādī</span> pula mengira 14 makna bagi «min» yang bukan tambahan, kemudian membincangkan «min» tambahan secara berasingan (<a class="tb-link" href="https://shamela.ws/book/26099/290" target="_blank" rel="noopener">h. 308 · Shamela ↗</a>). Dua makna yang hanya ada dalam senarai beliau ditanda «+». Ayat contoh ialah ayat yang disebut oleh <span class="nw">Ibn Hishām</span> atau <span class="nw">al-Murādī</span> sendiri, kecuali jika <span class="nw">kata-kata</span> yang mereka petik ada dalam beberapa ayat; ketika itu ayat yang dipaparkan ialah pilihan kami (makna 9 dan 14–15).</span><span class="le">Order and numbering follow <span class="nw">Ibn Hishām</span> (15 meanings, including two kinds of extra «min»). <span class="nw">Al-Murādī</span> counts 14 meanings for the <span class="nw">non-extra</span> «min», then treats the extra «min» separately (<a class="tb-link" href="https://shamela.ws/book/26099/290" target="_blank" rel="noopener">p. 308 · Shamela ↗</a>). Two meanings found only in his list are marked «+». Each example verse is one cited by <span class="nw">Ibn Hishām</span> or <span class="nw">al-Murādī</span> themselves, except where the words they quote occur in several verses; there the verse shown is our choice (meanings 9 and 14–15).</span></p>
+
+<div class="mean">
+<h3><span class="no">1</span><span class="lm">Dari, titik mula (<i>ibtidā’ <span class="nw">al-ghāyah</span></i>)</span><span class="le">From, the starting point (<i>ibtidā’ <span class="nw">al-ghāyah</span></i>)</span></h3>
+<p class="tb-tx"><span class="lm">Inilah makna yang paling kerap. Kata <span class="nw">Ibn Hishām</span>, ada ulama yang berkata semua makna lain kembali kepadanya (lihat E1).</span><span class="le">This is the most frequent meaning. <span class="nw">Ibn Hishām</span> says some scholars hold that all the other meanings go back to it (see E1).</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«أَحَدُهَا ابْتِدَاءُ الْغَايَةِ وَهُوَ الْغَالِبُ عَلَيْهَا حَتَّى ادَّعَى جَمَاعَةٌ أَنَّ سَائِرَ مَعَانِيهَا رَاجِعَةٌ إِلَيْهِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/407" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 419 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span>: makna ini bagi tempat disepakati oleh semua ulama.</span><span class="le"><span class="nw">Al-Murādī</span>: for place, this meaning is agreed by all.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«فَغَيْرُ الزَّائِدِ لَهُ أَرْبَعَةَ عَشَرَ مَعْنًى: الْأَوَّلُ: ابْتِدَاءُ الْغَايَةِ، فِي الْمَكَانِ اتِّفَاقًا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/290" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 308 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">سُبۡحَٰنَ ٱلَّذِيٓ أَسۡرَىٰ بِعَبۡدِهِۦ لَيۡلٗا <span class="hf">مِّنَ</span> ٱلۡمَسۡجِدِ ٱلۡحَرَامِ إِلَى ٱلۡمَسۡجِدِ ٱلۡأَقۡصَا …</span><span class="ref"><span class="nw">al-Isrā’</span> 17:1 <a class="tb-link" href="https://www.quranwordsattartil.com/al-isra/#a1"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Maha Suci Allah yang telah menjalankan <span class="nw">hamba-Nya</span> (Muhammad) pada malam hari dari Masjid <span class="nw">Al-Haraam</span> (di Makkah) ke Masjid <span class="nw">Al-Aqsa</span> (di Palestin) … (Basmeih)</span><span class="le">Glory be to Allah, Who made His servant (Muhammad) travel in the night from the Sacred Mosque (in Makkah) to the Masjid <span class="nw">al-Aqsa</span> (in Palestine) …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="our">Huraian kami:</span> perjalanan malam Nabi Muhammad ﷺ bermula dari Masjid <span class="nw">al-Ḥarām</span>. «Min» menandakan titik mulanya, dan «ilā» titik akhirnya.</span><span class="le"><span class="our">Our explanation:</span> the night journey of the Prophet Muhammad ﷺ began from the Sacred Mosque. «Min» marks its starting point, and «ilā» its end point.</span></p>
+<p class="tb-h"><span class="lm">Bagaimana pula titik mula masa?</span><span class="le">What about a starting point in time?</span></p>
+<p class="tb-tx"><span class="lm">Ulama berbeza pendapat. <span class="nw">Ibn Hishām</span>: ulama Kufah, <span class="nw">al-Akhfash</span>, <span class="nw">al-Mubarrad</span> dan <span class="nw">Ibn Durustawayh</span> berkata «min» juga untuk titik mula masa. Antara dalil mereka ayat ini.</span><span class="le">Scholars differ. <span class="nw">Ibn Hishām</span>: the Kufans, <span class="nw">al-Akhfash</span>, <span class="nw">al-Mubarrad</span> and <span class="nw">Ibn Durustawayh</span> say «min» also marks a starting point in time. One of their proofs is this verse.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«قَالَ الْكُوفِيُّونَ وَالْأَخْفَشُ وَالْمُبَرِّدُ وَابْنُ دُرُسْتُوَيْهِ وَفِي الزَّمَانِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/407" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 419 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… لَّمَسۡجِدٌ أُسِّسَ عَلَى ٱلتَّقۡوَىٰ <span class="hf">مِنۡ</span> أَوَّلِ يَوۡمٍ …</span><span class="ref"><span class="nw">at-Tawbah</span> 9:108 <a class="tb-link" href="https://www.quranwordsattartil.com/at-taubah/95-112/#a108"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… sesungguhnya masjid (Qubaa' yang engkau bina wahai Muhammad), yang telah didirikan di atas dasar taqwa dari mula (wujudnya) … (Basmeih)</span><span class="le">… the mosque (of Quba’ that you built, O Muhammad), which was founded on the basis of taqwa from the beginning (of its existence) …</span></span></div>
+<p class="tb-tx"><span class="lm">Ulama Basrah membaca ayat ini dengan kata yang tersembunyi: “dari <i>pengasasan</i> hari pertama”, supaya «min» kekal untuk tempat dan perkara (<a class="tb-link" href="https://shamela.ws/book/26099/291" target="_blank" rel="noopener">h. 309 · Shamela ↗</a>).</span><span class="le">The Basrans read this verse with a hidden word: “from the <i>founding</i> of the first day”, so that «min» stays with place and things (<a class="tb-link" href="https://shamela.ws/book/26099/291" target="_blank" rel="noopener">p. 309 · Shamela ↗</a>).</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«عَلَى تَقْدِيرِ: مِنْ تَأْسِيسِ أَوَّلِ يَوْمٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/291" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 309 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Dalam <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, sejurus selepas menyebut <span class="nw">Ibn Mālik</span> mensahihkan pendapat Kufah kerana banyak buktinya, takwil ulama Basrah itu disifatkan «memaksa makna» (<i>ta‘assuf</i>) (<a class="tb-link" href="https://shamela.ws/book/26099/290" target="_blank" rel="noopener">h. 308–309 · Shamela ↗</a>). Kami hanya menukilnya.</span><span class="le">In <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, right after noting that <span class="nw">Ibn Mālik</span> judged the Kufan view correct because of its many proofs, the Basran reading is called “forced” (<i>ta‘assuf</i>) (<a class="tb-link" href="https://shamela.ws/book/26099/290" target="_blank" rel="noopener">pp. 308–309 · Shamela ↗</a>). We only report it.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَتَأْوِيلُ الْبَصْرِيِّينَ مَا وَرَدَ مِنْ ذَلِكَ تَعَسُّفٌ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/291" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 309 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">2</span><span class="lm">Sebahagian daripada (<i>tab‘īḍ</i>)</span><span class="le">Some of, part of (<i>tab‘īḍ</i>)</span></h3>
+<p class="tb-tx"><span class="lm">Kata <span class="nw">Ibn Hishām</span>, tandanya: perkataan «ba‘ḍ» (sebahagian) boleh diletakkan di tempatnya.</span><span class="le"><span class="nw">Ibn Hishām</span> says its sign is that the word «ba‘ḍ» (some) can take its place.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَعَلَامَتُهَا إِمْكَانُ سَدِّ بَعْضٍ مَسَدَّهَا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/408" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 420 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… <span class="ul">مِّنۡهُم</span> <span class="is">مَّن</span> كَلَّمَ ٱللَّهُۖ …</span><span class="ref"><span class="nw">al-Baqarah</span> 2:253 <a class="tb-link" href="https://www.quranwordsattartil.com/al-baqarah/243-260/#a253"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Di antara mereka ada yang Allah <span class="nw">berkata-kata</span> dengannya … (Basmeih)</span><span class="le">… Among them are some with whom Allah spoke …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="our">Pemerhatian kami:</span> ayat ini memuatkan dua kata yang hampir sama tulisannya. «مِّنۡهُم» bermula dengan «min» (huruf, merah bergaris), dan «مَّن» ialah «man» (kata nama, hijau). Lihat bahagian D.</span><span class="le"><span class="our">Our observation:</span> this verse holds two words that look almost alike. «مِّنۡهُم» begins with «min» (a particle, underlined red), and «مَّن» is «man» (a noun, green). See part D.</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">3</span><span class="lm">Menerangkan jenis (<i>bayān <span class="nw">al-jins</span></i>)</span><span class="le">Explaining the kind (<i>bayān <span class="nw">al-jins</span></i>)</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«الثَّالِثُ بَيَانُ الْجِنْسِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/408" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 420 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Kata <span class="nw">al-Murādī</span>, tandanya: «alladhī» (yang, iaitu) sesuai diletakkan di tempatnya.</span><span class="le"><span class="nw">Al-Murādī</span> says its sign is that «alladhī» (which is, namely) fits in its place.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«أَنْ يَحْسُنَ جَعْلُ الَّذِي مَكَانَهَا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/292" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 310 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… فَٱجۡتَنِبُواْ ٱلرِّجۡسَ <span class="hf">مِنَ</span> ٱلۡأَوۡثَٰنِ …</span><span class="ref"><span class="nw">al-Ḥajj</span> 22:30 <a class="tb-link" href="https://www.quranwordsattartil.com/al-hajj/#a30"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… maka jauhilah kekotoran syirik yang disebabkan oleh penyembahan berhala … (Basmeih)</span><span class="le">… so keep away from the filth of shirk caused by the worship of idols …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="our">Huraian kami:</span> «min» di sini tidak bermaksud sebahagian berhala. Ia menerangkan kekotoran yang dimaksudkan: kekotoran yang berupa berhala.</span><span class="le"><span class="our">Our explanation:</span> «min» here does not mean some of the idols. It explains which filth is meant: the filth that is the idols.</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">4</span><span class="lm">Sebab, kerana (<i>ta‘līl</i>)</span><span class="le">Because of (<i>ta‘līl</i>)</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«الرَّابِعُ التَّعْلِيلُ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/409" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 421 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar"><span class="ul">مِّمَّا</span> خَطِيٓـَٰٔتِهِمۡ أُغۡرِقُواْ …</span><span class="ref"><span class="nw">Nūḥ</span> 71:25 <a class="tb-link" href="https://www.quranwordsattartil.com/nuh/#a25"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Disebabkan <span class="nw">dosa-dosa</span> dan kesalahan mereka, mereka ditenggelamkan … (Basmeih)</span><span class="le">Because of their sins and wrongs they were drowned …</span></span></div>
+<p class="tb-tx muted"><span class="lm">«مِّمَّا» ialah «min» + «mā». Basmeih menterjemahkannya “disebabkan”.</span><span class="le">«مِّمَّا» is «min» + «mā». Basmeih renders it “disebabkan” (because of).</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">5</span><span class="lm">Sebagai ganti (<i>badal</i>)</span><span class="le">Instead of (<i>badal</i>)</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«الْخَامِسُ الْبَدَلُ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/410" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 422 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… أَرَضِيتُم بِٱلۡحَيَوٰةِ ٱلدُّنۡيَا <span class="hf">مِنَ</span> ٱلۡأٓخِرَةِۚ …</span><span class="ref"><span class="nw">at-Tawbah</span> 9:38 <a class="tb-link" href="https://www.quranwordsattartil.com/at-taubah/38-56/#a38"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Adakah kamu lebih suka dengan kehidupan dunia daripada akhirat? … (Basmeih)</span><span class="le">… Are you more pleased with the life of the world than with the Hereafter? …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="our">Huraian kami:</span> maksudnya, kehidupan dunia dipilih sebagai ganti akhirat. Sebahagian ulama menolak makna ini: lihat E3.</span><span class="le"><span class="our">Our explanation:</span> the life of this world is chosen in place of the Hereafter. Some scholars reject this meaning: see E3.</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">6</span><span class="lm">Melepasi, terselamat daripada (<i>mujāwazah</i>), seperti «‘an»</span><span class="le">Away from (<i>mujāwazah</i>), like «‘an»</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«السَّادِسُ: الْمُجَاوَزَةُ. فَتَكُونُ بِمَعْنَى عَنْ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/293" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 311 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">ٱلَّذِيٓ أَطۡعَمَهُم <span class="hf">مِّن</span> جُوعٖ …</span><span class="ref"><span class="nw">Quraysh</span> 106:4 <a class="tb-link" href="https://www.quranwordsattartil.com/quraisy/#a4"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Tuhan yang memberi mereka penghidupan: menyelamatkan mereka dari kelaparan … (Basmeih)</span><span class="le">the Lord Who has given them their living: saving them from hunger …</span></span></div>
+<p class="tb-tx muted"><span class="lm"><span class="nw">Al-Murādī</span> membawa ayat ini bagi makna “seperti «‘an»”. <span class="nw">Ibn Hishām</span> membawa ayat lain bagi makna yang sama (<a class="tb-link" href="https://shamela.ws/book/6972/411" target="_blank" rel="noopener">h. 423 · Shamela ↗</a>).</span><span class="le"><span class="nw">Al-Murādī</span> cites this verse for “like «‘an»”. <span class="nw">Ibn Hishām</span> cites other verses for the same meaning (<a class="tb-link" href="https://shamela.ws/book/6972/411" target="_blank" rel="noopener">p. 423 · Shamela ↗</a>).</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">7</span><span class="lm">Dengan, seperti «bā’»</span><span class="le">With, by means of, like «bā’»</span></h3>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> menyebut makna ini daripada Yūnus (ahli nahu awal), kemudian memberi pandangan beliau sendiri: yang zahir, «min» di sini untuk titik mula.</span><span class="le"><span class="nw">Ibn Hishām</span> reports this meaning from Yūnus (an early grammarian), then gives his own view: the apparent sense is that «min» here marks a starting point.</span></p>
+<div class="ay"><span class="v" lang="ar">… يَنظُرُونَ <span class="hf">مِن</span> طَرۡفٍ خَفِيّٖۗ …</span><span class="ref"><span class="nw">ash-Shūrā</span> 42:45 <a class="tb-link" href="https://www.quranwordsattartil.com/asy-syura/#a45"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… sambil memandang (ke neraka itu) hanya dengan mengerling … (Basmeih)</span><span class="le">… looking (at that Fire) only with sideways glances …</span></span></div>
+<p class="tb-ar" lang="ar" dir="rtl">«قَالَهُ يُونُسُ وَالظَّاهِرُ أَنَّهَا لِلِابْتِدَاءِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/411" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 423 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">8</span><span class="lm">Pada, seperti «fī»</span><span class="le">In, on, like «fī»</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«الثَّامِنُ مُرَادَفَةُ فِي»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/412" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 424 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… إِذَا نُودِيَ لِلصَّلَوٰةِ <span class="hf">مِن</span> يَوۡمِ ٱلۡجُمُعَةِ …</span><span class="ref"><span class="nw">al-Jumu‘ah</span> 62:9 <a class="tb-link" href="https://www.quranwordsattartil.com/al-jumuah/#a9"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Apabila diserukan azan (bang) untuk mengerjakan sembahyang pada hari Jumaat … (Basmeih)</span><span class="le">… When the adhan (call) is made to perform the prayer on Friday …</span></span></div>
+<p class="tb-tx muted"><span class="lm">Basmeih menterjemahkan «min» di sini “pada”.</span><span class="le">Basmeih renders «min» here “pada” (on).</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">9</span><span class="lm">Di sisi, seperti «‘inda»</span><span class="le">In the sight of, like «‘inda»</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«التَّاسِعُ مُوَافَقَةُ عِنْدَ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/412" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 424 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… لَن تُغۡنِيَ عَنۡهُمۡ أَمۡوَٰلُهُمۡ وَلَآ أَوۡلَٰدُهُم <span class="hf">مِّنَ</span> ٱللَّهِ شَيۡـٔٗاۖ …</span><span class="ref"><span class="nw">Āli ‘Imrān</span> 3:10 <a class="tb-link" href="https://www.quranwordsattartil.com/ali-imran/#a10"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… harta benda <span class="nw">orang-orang</span> kafir, dan juga <span class="nw">anak-pinak</span> mereka tidak <span class="nw">sekali-kali</span> akan menyelamatkan mereka dari (azab seksa) Allah sedikit juapun … (Basmeih)</span><span class="le">… neither their wealth nor their children will ever save them from (the punishment of) Allah in the least …</span></span></div>
+<p class="tb-tx muted"><span class="lm"><span class="nw">Kata-kata</span> yang dipetik <span class="nw">Ibn Hishām</span> ada dalam Āli ‘Imrān 3:10 dan 3:116 serta <span class="nw">al-Mujādalah</span> 58:17; ayat yang dipaparkan ialah pilihan kami.</span><span class="le">The words <span class="nw">Ibn Hishām</span> quotes occur in Āli ‘Imrān 3:10 and 3:116 and <span class="nw">al-Mujādalah</span> 58:17; the verse shown is our choice.</span></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> menisbahkan makna ini kepada Abū ‘Ubaydah, dan menyebut bahawa ayat yang sama juga dibaca dengan makna “ganti” (makna 5). Makna ini tiada dalam senarai <span class="nw">al-Murādī</span>.</span><span class="le"><span class="nw">Ibn Hishām</span> attributes this meaning to Abū ‘Ubaydah, and notes that the same verse is also read as “instead of” (meaning 5). This meaning is not in <span class="nw">al-Murādī’s</span> list.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«قَالَهُ أَبُو عُبَيْدَةَ وَقَدْ مَضَى الْقَوْلُ بِأَنَّهَا فِي ذَلِكَ لِلْبَدَلِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/412" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 424 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">10</span><span class="lm">Kerap kali, seperti «rubbamā»</span><span class="le">Often, like «rubbamā»</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«الْعَاشِرُ مُرَادَفَةُ رُبَّمَا وَذَلِكَ إِذَا اتَّصَلَتْ بِمَا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/412" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 424 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Contohnya daripada syair (<i>mimmā</i>: «min» + «mā»), bukan ayat <span class="nw">al-Qur’an</span>.</span><span class="le">Its example is a line of poetry (<i>mimmā</i>: «min» + «mā»), not a Qur’anic verse.</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">11</span><span class="lm">Terhadap, seperti «‘alā»</span><span class="le">Against, like «‘alā»</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«كَذَا قَالَ الْأَخْفَشُ. وَالْأَحْسَنُ أَنْ يُضَمَّنَ الْفِعْلُ مَعْنَى فِعْلٍ آخَرَ، أَيْ: مَنَعْنَاهُ بِالنَّصْرِ مِنَ الْقَوْمِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/295" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 313 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">وَنَصَرۡنَٰهُ <span class="hf">مِنَ</span> ٱلۡقَوۡمِ …</span><span class="ref"><span class="nw">al-Anbiyā’</span> 21:77 <a class="tb-link" href="https://www.quranwordsattartil.com/al-anbiya/76-93/#a77"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Dan Kami membelanya dari angkara kaum … (Basmeih)</span><span class="le">And We defended him from the evil of those people …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> menyebut makna ini sebagai pendapat <span class="nw">al-Akhfash</span>, lalu berkata yang lebih baik ialah <i>taḍmīn</i> (kata kerja membawa makna kata kerja lain): “Kami melindunginya dengan pertolongan”. Perbandingan «naṣara ‘alā / min / ilā» ada di entri «‘alā»: <a class="tb-link" href="../ala/#banding">‘Alā, bahagian C ›</a></span><span class="le"><span class="nw">Al-Murādī</span> gives this meaning as <span class="nw">al-Akhfash’s</span> view, then says <i>taḍmīn</i> (one verb carrying the sense of another) is better: “We shielded him by help”. The comparison «naṣara ‘alā / min / ilā» is in the «‘alā» entry: <a class="tb-link" href="../ala/#banding">‘Alā, part C ›</a></span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">12</span><span class="lm">Membezakan dua lawan (<i>faṣl</i>)</span><span class="le">Telling two opposites apart (<i>faṣl</i>)</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«الثَّانِيَ عَشَرَ الْفَصْلُ وَهِيَ الدَّاخِلَةُ عَلَى ثَانِي الْمُتَضَادَّيْنِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/412" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 424 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… وَٱللَّهُ يَعۡلَمُ ٱلۡمُفۡسِدَ <span class="hf">مِنَ</span> ٱلۡمُصۡلِحِۚ …</span><span class="ref"><span class="nw">al-Baqarah</span> 2:220 <a class="tb-link" href="https://www.quranwordsattartil.com/al-baqarah/204-220/#a220"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… dan Allah mengetahui akan orang yang merosakkan (harta benda mereka) daripada orang yang hendak memperbaikinya … (Basmeih)</span><span class="le">… and Allah knows the one who ruins (their property) from the one who seeks to set it right …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> menisbahkan makna ini kepada <span class="nw">Ibn Mālik</span>, lalu mempersoalkannya: makna “membezakan” datang daripada kata kerja, bukan daripada «min». Kata beliau, yang zahir «min» di sini untuk titik mula, atau seperti «‘an».</span><span class="le"><span class="nw">Ibn Hishām</span> attributes this meaning to <span class="nw">Ibn Mālik</span>, then questions it: the sense of “telling apart” comes from the verb, not from «min». He says the apparent sense is that «min» here marks a starting point, or is like «‘an».</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«قَالَهُ ابْنُ مَالِكٍ وَفِيهِ نَظَرٌ لِأَنَّ الْفَصْلَ مُسْتَفَادٌ مِنَ الْعَامِلِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/413" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 425 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">13</span><span class="lm">Tempat bermula dan berakhir (<i>ghāyah</i>)</span><span class="le">Where something both starts and ends (<i>ghāyah</i>)</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«الثَّالِثَ عَشَرَ الْغَايَةُ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/413" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 425 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Contoh Sībawayh: “aku melihatnya dari tempat itu”. <span class="nw">Ibn Hishām</span> dan <span class="nw">al-Murādī</span> tidak membawa ayat <span class="nw">al-Qur’an</span> bagi makna ini.</span><span class="le">Sībawayh’s example: “I saw him from that place”. <span class="nw">Ibn Hishām</span> and <span class="nw">al-Murādī</span> cite no Qur’anic verse for this meaning.</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">14–15</span><span class="lm">Tambahan untuk menegaskan (<i>zā’idah</i>)</span><span class="le">Extra, for emphasis (<i>zā’idah</i>)</span></h3>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> membahagi «min» tambahan kepada dua. Yang pertama menjadikan kata selepasnya jelas umum: “tidak datang <i>seorang lelaki pun</i>”, bukan hanya “tidak datang seorang lelaki” (mungkin dua orang datang).</span><span class="le"><span class="nw">Ibn Hishām</span> divides the extra «min» into two. The first makes the next word clearly general: “not <i>a single man</i> came”, not just “a man did not come” (perhaps two came).</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«الرَّابِعَ عَشَرَ التَّنْصِيصُ عَلَى الْعُمُومِ وَهِيَ الزَّائِدَةُ فِي نَحْوِ مَا جَاءَنِي مِنْ رَجُلٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/413" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 425 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Yang kedua masuk pada kata yang sudah umum, seperti «aḥad» (seorang pun), dan hanya menguatkannya.</span><span class="le">The second comes before a word that is already general, such as «aḥad» (anyone), and only strengthens it.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«الْخَامِسَ عَشَرَ تَوْكِيدُ الْعُمُومِ وَهِيَ الزَّائِدَةُ فِي نَحْوِ مَا جَاءَنِي مِنْ أَحَدٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/413" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 425 · Shamela ↗</a></p>
+<div class="ay"><span class="v" lang="ar">… مَا لَكُم <span class="hf">مِّنۡ</span> إِلَٰهٍ غَيۡرُهُۥٓ …</span><span class="ref"><span class="nw">al-A‘rāf</span> 7:59 <a class="tb-link" href="https://www.quranwordsattartil.com/al-araf/48-69/#a59"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… tidak ada Tuhan bagi kamu selain <span class="nw">daripada-Nya</span> … (Basmeih)</span><span class="le">… there is not any god for you other than Him …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> membawa <span class="nw">kata-kata</span> «mā lakum min ilāhin ghayruh» sebagai contoh «min» tambahan selepas nafi, tanpa menyebut surah (<a class="tb-link" href="https://shamela.ws/book/26099/299" target="_blank" rel="noopener">h. 317 · Shamela ↗</a>). <span class="nw">Kata-kata</span> ini diulang dalam seruan beberapa nabi; ayat yang dipaparkan, <span class="nw">al-A‘rāf</span> 7:59 (seruan Nabi Nuh), ialah pilihan kami. <span class="our">Huraian kami:</span> tanpa «min» ayatnya tetap sempurna; «min» menegaskan: tiada tuhan langsung selain Allah. Syarat «min» tambahan diperselisihkan: lihat E2.</span><span class="le"><span class="nw">Al-Murādī</span> cites the words «mā lakum min ilāhin ghayruh» as an example of extra «min» after a negation, without naming a surah (<a class="tb-link" href="https://shamela.ws/book/26099/299" target="_blank" rel="noopener">p. 317 · Shamela ↗</a>). These words recur in the calls of several prophets; the verse shown, <span class="nw">al-A‘rāf</span> 7:59 (the Prophet Nuh’s call), is our choice. <span class="our">Our explanation:</span> without «min» the sentence is still complete; «min» stresses: no god at all besides Allah. The conditions for extra «min» are disputed: see E2.</span></p>
+<p class="tb-h"><span class="lm">Tiga «min» dalam satu ayat</span><span class="le">Three «min» in one verse</span></p>
+<div class="ay"><span class="v" lang="ar">مَّا يَوَدُّ ٱلَّذِينَ كَفَرُواْ <span class="hf">مِنۡ</span> أَهۡلِ ٱلۡكِتَٰبِ وَلَا ٱلۡمُشۡرِكِينَ أَن يُنَزَّلَ عَلَيۡكُم <span class="hf">مِّنۡ</span> خَيۡرٖ <span class="hf">مِّن</span> رَّبِّكُمۡۚ …</span><span class="ref"><span class="nw">al-Baqarah</span> 2:105 <a class="tb-link" href="https://www.quranwordsattartil.com/al-baqarah/104-123/#a105"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm"><span class="nw">Orang-orang</span> kafir dari Ahli kitab, dan juga dari <span class="nw">orang-orang</span> musyrik, tidak suka kiranya diturunkan kepada kamu sedikit dari kebaikan (atau wahyu) dari Tuhan kamu … (Basmeih)</span><span class="le">Those who disbelieve among the People of the Book, and the polytheists as well, do not like any good (or revelation) to be sent down to you from your Lord …</span></span></div>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span>: «min» pertama menerangkan jenis (orang kafir itu dua jenis: ahli kitab dan musyrik); yang kedua tambahan; yang ketiga titik mula.</span><span class="le"><span class="nw">Ibn Hishām</span>: the first «min» explains the kind (the disbelievers are of two kinds: People of the Book and polytheists); the second is extra; the third marks a starting point.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«فِيهَا مِنْ ثَلَاثَ مَرَّاتٍ الْأُولَى لِلتَّبْيِينِ لِأَنَّ الْكَافِرِينَ نَوْعَانِ كِتَابِيُّونَ وَمُشْرِكُونَ وَالثَّانِيَةُ زَائِدَةٌ وَالثَّالِثَةُ لِابْتِدَاءِ الْغَايَةِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/418" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 430 · Shamela ↗</a></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">+</span><span class="lm">Hingga, menuju (<i>intihā’</i>), dalam senarai <span class="nw">al-Murādī</span> sahaja</span><span class="le">To, towards (<i>intihā’</i>), in <span class="nw">al-Murādī’s</span> list only</span></h3>
+<p class="tb-ar" lang="ar" dir="rtl">«السَّابِعُ: الِانْتِهَاءُ. مَثَّلَهُ ابْنُ مَالِكٍ بِقَوْلِهِ: قَرُبْتُ مِنْهُ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/294" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 312 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Contohnya ayat buatan <span class="nw">Ibn Mālik</span>, “aku mendekatinya”, bukan ayat <span class="nw">al-Qur’an</span>.</span><span class="le">Its example is <span class="nw">Ibn Mālik’s</span> own sentence, “I drew near to him”, not a Qur’anic verse.</span></p>
+</div>
+
+<div class="mean">
+<h3><span class="no">+</span><span class="lm">Sumpah (<i>qasam</i>), dalam senarai <span class="nw">al-Murādī</span> sahaja</span><span class="le">Oath (<i>qasam</i>), in <span class="nw">al-Murādī’s</span> list only</span></h3>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span> menyebutnya sebagai makna <span class="nw">ke-14</span> dalam senarainya: ia hanya masuk pada kata «Rabb», seperti “min Rabbī” (demi Tuhanku). Tiada ayat <span class="nw">al-Qur’an</span> (<a class="tb-link" href="https://shamela.ws/book/26099/297" target="_blank" rel="noopener">h. 315 · Shamela ↗</a>).</span><span class="le"><span class="nw">Al-Murādī</span> gives it as the 14th meaning in his list: it comes only before the word «Rabb», as in “min Rabbī” (by my Lord). There is no Qur’anic verse (<a class="tb-link" href="https://shamela.ws/book/26099/297" target="_blank" rel="noopener">p. 315 · Shamela ↗</a>).</span></p>
+</div>
+</div>
+
+<!-- B. ON OUR PAGES -->
+<div class="card" id="laman">
+<h2><span class="lm">B. «Min» dalam kotak laman kami</span><span class="le">B. «Min» in our verse boxes</span></h2>
+<p class="tb-tx muted"><span class="lm">Kotak ini sudah terbit.</span><span class="le">This box is already published.</span></p>
+<div class="ex"><span class=q><span class="tb-q" lang="ar" dir="rtl">مِنۢ</span></span><span class="rf"><span style="white-space:nowrap">Yasin</span> 36:9</span> — <span class="lm">Ayat ini memakai «min» sebelum «bayni aydīhim» (ḥarf jarr); <span style="white-space:nowrap"><span class="nw">al-Biqā‘ī</span>:</span> sekatan itu daripada satu kebaikan tertentu.</span><span class="le" lang="en">The verse puts «min» before «bayni aydīhim» (a preposition); <span style="white-space:nowrap"><span class="nw">al-Biqā‘ī</span>:</span> the barrier blocks one particular good.</span> <a href="https://www.quranwordsattartil.com/yasin/#a9"><span class="lm">Baca kotak ›</span><span class="le">Read the box ›</span></a></div>
+</div>
+
+<!-- C. COMPARE -->
+<div class="card" id="banding">
+<h2><span class="lm">C. Satu kata, huruf berbeza: «yaghfir lakum (min) dhunūbikum»</span><span class="le">C. One word, different particles: «yaghfir lakum (min) dhunūbikum»</span></h2>
+<p class="tb-tx"><span class="lm">Janji pengampunan datang dalam dua bentuk. Kata kerjanya sama, dosanya sama. Bezanya hanya ada atau tiada «min».</span><span class="le">The promise of forgiveness comes in two forms. The verb is the same, and so are the sins. The only difference is whether «min» is there.</span></p>
+
+<div class="mean">
+<h3><span class="no">min</span><span class="lm">dengan «min»</span><span class="le">with «min»</span></h3>
+<p class="tb-tx"><span class="lm">Seruan Nabi Nuh kepada kaumnya:</span><span class="le">The Prophet Nuh’s call to his people:</span></p>
+<div class="ay"><span class="v" lang="ar">يَغۡفِرۡ لَكُم <span class="hf">مِّن</span> ذُنُوبِكُمۡ …</span><span class="ref"><span class="nw">Nūḥ</span> 71:4 <a class="tb-link" href="https://www.quranwordsattartil.com/nuh/#a4"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Supaya Allah mengampunkan bagi kamu sebahagian dari <span class="nw">dosa-dosa</span> kamu … (Basmeih)</span><span class="le">so that Allah will forgive you some of your sins …</span></span></div>
+<p class="tb-tx"><span class="lm">Seruan jin kepada kaum mereka:</span><span class="le">The jinn’s call to their people:</span></p>
+<div class="ay"><span class="v" lang="ar">… يَغۡفِرۡ لَكُم <span class="hf">مِّن</span> ذُنُوبِكُمۡ …</span><span class="ref"><span class="nw">al-Aḥqāf</span> 46:31 <a class="tb-link" href="https://www.quranwordsattartil.com/al-ahqaf/#a31"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… supaya Allah mengampunkan sebahagian dari <span class="nw">dosa-dosa</span> kamu … (Basmeih)</span><span class="le">… so that Allah forgives some of your sins …</span></span></div>
+<p class="tb-tx"><span class="lm">Seruan para rasul kepada kaum mereka:</span><span class="le">The messengers’ call to their peoples:</span></p>
+<div class="ay"><span class="v" lang="ar">… يَدۡعُوكُمۡ لِيَغۡفِرَ لَكُم <span class="hf">مِّن</span> ذُنُوبِكُمۡ …</span><span class="ref"><span class="nw">Ibrāhīm</span> 14:10 <a class="tb-link" href="https://www.quranwordsattartil.com/ibrahim/#a10"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Ia menyeru kamu beriman kerana hendak membersih dan melepaskan kamu dari <span class="nw">dosa-dosa</span> kamu … (Basmeih)</span><span class="le">… He is calling on you to believe in order to cleanse and free you from your sins …</span></span></div>
+</div>
+
+<div class="mean">
+<h3><span class="no">—</span><span class="lm">tanpa «min»</span><span class="le">without «min»</span></h3>
+<p class="tb-tx"><span class="lm">Seruan kepada orang beriman, yang bermula «<span lang="ar" style="font-family:Amiri,serif">يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ</span>» (<span class="nw">aṣ-Ṣaff</span> 61:10):</span><span class="le">An address to the believers, which begins «<span lang="ar" style="font-family:Amiri,serif">يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ</span>» (<span class="nw">aṣ-Ṣaff</span> 61:10):</span></p>
+<div class="ay"><span class="v" lang="ar">يَغۡفِرۡ لَكُمۡ ذُنُوبَكُمۡ …</span><span class="ref"><span class="nw">aṣ-Ṣaff</span> 61:12 <a class="tb-link" href="https://www.quranwordsattartil.com/as-saff/#a12"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">(Dengan itu) Allah akan mengampunkan <span class="nw">dosa-dosa</span> kamu … (Basmeih)</span><span class="le">(With that) Allah will forgive you your sins …</span></span></div>
+</div>
+
+<p class="tb-h"><span class="lm"><span class="nw">Az-Zamakhsharī</span>: membezakan dua seruan</span><span class="le"><span class="nw">Az-Zamakhsharī</span>: telling two addresses apart</span></p>
+<p class="tb-tx"><span class="lm">Ketika mentafsir Ibrāhīm 14:10, <span class="nw">az-Zamakhsharī</span> sendiri mengemukakan soalan: apakah makna “sebahagian” (<i>tab‘īḍ</i>) di sini? Jawab beliau, bentuk ini hanya beliau temui dalam seruan kepada orang kafir:</span><span class="le">Explaining Ibrāhīm 14:10, <span class="nw">az-Zamakhsharī</span> raises the question himself: what is the “some of” (<i>tab‘īḍ</i>) sense here? He answers that he has found this form only in addresses to disbelievers:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«مَا عَلِمْتُهُ جَاءَ هَكَذَا إِلَّا فِي خِطَابِ الْكَافِرِينَ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">az-Zamakhsharī</span>,</span><span class="le"><span class="nw">az-Zamakhsharī</span>,</span> <i><span class="nw">al-Kashshāf</span></i>, <a class="tb-link" href="https://shamela.ws/book/23627/1242" target="_blank" rel="noopener"><span class="lm"></span><span class="le"></span> 2/543 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Kepada orang beriman pula Allah berfirman «yaghfir lakum dhunūbakum». Kata beliau, tujuannya membezakan dua seruan itu, supaya dua golongan tidak disamakan dalam janji:</span><span class="le">To the believers, Allah says «yaghfir lakum dhunūbakum». He says the purpose is to tell the two addresses apart, so that the two groups are not made equal in the promise:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَكَانَ ذَلِكَ لِلتَّفْرِقَةِ بَيْنَ الْخِطَابَيْنِ، وَلِئَلَّا يُسَوَّى بَيْنَ الْفَرِيقَيْنِ فِي الْمِيعَادِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">az-Zamakhsharī</span>,</span><span class="le"><span class="nw">az-Zamakhsharī</span>,</span> <i><span class="nw">al-Kashshāf</span></i>, <a class="tb-link" href="https://shamela.ws/book/23627/1242" target="_blank" rel="noopener"><span class="lm"></span><span class="le"></span> 2/543 · Shamela ↗</a></p>
+
+<p class="tb-h"><span class="lm"><span class="nw">Ibn ‘Āshūr</span>: dua wajah bagi Nūḥ 71:4</span><span class="le"><span class="nw">Ibn ‘Āshūr</span>: two readings of Nūḥ 71:4</span></p>
+<p class="tb-tx"><span class="lm">Wajah pertama: «min» tambahan untuk menegaskan, walaupun ayatnya ayat positif. Beliau menisbahkannya kepada ramai ahli nahu, antaranya <span class="nw">al-Akhfash</span>, <span class="nw">al-Fārisī</span>, <span class="nw">Ibn Jinnī</span>, <span class="nw">al-Kisā’ī</span> dan semua ulama Kufah.</span><span class="le">First reading: an extra «min» for emphasis, even though the sentence is positive. He attributes this to many grammarians, among them <span class="nw">al-Akhfash</span>, <span class="nw">al-Fārisī</span>, <span class="nw">Ibn Jinnī</span>, <span class="nw">al-Kisā’ī</span> and all the Kufans.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَحَرْفُ مِنْ زَائِدٌ لِلتَّوْكِيدِ، وَهَذَا مِنْ زِيَادَةِ مِنْ فِي الْإِيجَابِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn ‘Āshūr</span>,</span><span class="le"><span class="nw">Ibn ‘Āshūr</span>,</span> <i><span class="nw">at-Taḥrīr</span> wa <span class="nw">at-Tanwīr</span></i>, <a class="tb-link" href="https://shamela.ws/book/9776/10170" target="_blank" rel="noopener"><span class="lm"></span><span class="le"></span> 29/189 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Menurut wajah ini, iman menghapuskan dosa sebelumnya dalam syariat Nabi Nuh, sama seperti dalam syariat Islam:</span><span class="le">On this reading, faith wipes out earlier sins in the law of the Prophet Nuh, just as in the law of Islam:</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«فَيُفِيدُ أَنَّ الْإِيمَانَ يَجُبُّ مَا قَبْلَهُ فِي شَرِيعَةِ نُوحٍ مِثْلَ شَرِيعَةِ الْإِسْلَامِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn ‘Āshūr</span>,</span><span class="le"><span class="nw">Ibn ‘Āshūr</span>,</span> <i><span class="nw">at-Taḥrīr</span> wa <span class="nw">at-Tanwīr</span></i>, <a class="tb-link" href="https://shamela.ws/book/9776/10170" target="_blank" rel="noopener"><span class="lm"></span><span class="le"></span> 29/189 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Wajah kedua: «min» bermakna sebahagian, bagi ulama yang menerima makna itu. Ini pilihan <span class="nw">at-Taftāzānī</span>. Maksudnya, yang diampunkan ialah dosa syirik dan yang berkaitan dengannya.</span><span class="le">Second reading: «min» means “some of”, for those who accept that sense. This is <span class="nw">at-Taftāzānī’s</span> choice. The sins forgiven are then those of shirk and what goes with it.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَيَجُوزُ أَنْ تَكُونَ مِنْ لِلتَّبْعِيضِ، عِنْدَ مَنْ أَثْبَتَ ذَلِكَ وَهُوَ اخْتِيَارُ التَّفْتَازَانِيِّ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn ‘Āshūr</span>,</span><span class="le"><span class="nw">Ibn ‘Āshūr</span>,</span> <i><span class="nw">at-Taḥrīr</span> wa <span class="nw">at-Tanwīr</span></i>, <a class="tb-link" href="https://shamela.ws/book/9776/10170" target="_blank" rel="noopener"><span class="lm"></span><span class="le"></span> 29/189 · Shamela ↗</a></p>
+<p class="tb-tx muted"><span class="lm">Kami menukil <span class="nw">kedua-dua</span> tafsir tanpa memilih antara keduanya. Terjemahan Basmeih bagi 71:4 dan 46:31, “sebahagian dari <span class="nw">dosa-dosa</span> kamu”, membawa makna “sebahagian”. <span class="nw">Al-Murādī</span> menukil <span class="nw">Ibn Mālik</span>, yang berpendapat «min» boleh ditambah tanpa syarat, membawa <span class="nw">kata-kata</span> «yaghfir lakum min dhunūbikum» sebagai bukti, tanpa menyebut surah; <span class="nw">kata-kata</span> ini ada dalam 71:4 dan 46:31 (<a class="tb-link" href="https://shamela.ws/book/26099/300" target="_blank" rel="noopener">h. 318 · Shamela ↗</a>). Lihat E2.</span><span class="le">We report both commentaries without choosing between them. Basmeih’s rendering of 71:4 and 46:31, “sebahagian dari <span class="nw">dosa-dosa</span> kamu” (some of your sins), carries the “some of” sense. <span class="nw">Al-Murādī</span> reports that <span class="nw">Ibn Mālik</span>, who holds that «min» can be extra without conditions, cites the words «yaghfir lakum min dhunūbikum» as proof, without naming a surah; these words occur in 71:4 and 46:31 (<a class="tb-link" href="https://shamela.ws/book/26099/300" target="_blank" rel="noopener">p. 318 · Shamela ↗</a>). See E2.</span></p>
+</div>
+
+<!-- D. DO NOT CONFUSE -->
+<div class="card" id="keliru">
+<h2><span class="lm">D. Jangan keliru: «min» <span lang="ar" class="hf" style="font-family:Amiri,serif">مِنْ</span> dan «man» <span lang="ar" class="is" style="font-family:Amiri,serif">مَنْ</span></span><span class="le">D. Do not confuse: «min» <span lang="ar" class="hf" style="font-family:Amiri,serif">مِنْ</span> and «man» <span lang="ar" class="is" style="font-family:Amiri,serif">مَنْ</span></span></h2>
+<p class="tb-tx"><span class="lm">Tulisannya sama: mīm dan nūn. Bezanya pada baris mīm. «Min» (berbaris bawah) ialah huruf. «Man» (berbaris atas) ialah kata nama yang merujuk kepada makhluk berakal: “siapa, sesiapa, orang yang”. Sebab itu ia diwarnakan hijau (isim).</span><span class="le">They are written the same: mīm and nūn. The difference is the vowel on the mīm. «Min» (with kasrah) is a particle. «Man» (with fatḥah) is a noun referring to rational beings: “who, whoever, the one who”. That is why it is coloured green (noun).</span></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span>: «man» datang dalam empat bentuk.</span><span class="le"><span class="nw">Ibn Hishām</span>: «man» comes in four forms.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«عَلَى أَرْبَعَةِ أَوْجُهٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/419" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 431 · Shamela ↗</a></p>
+<p class="tb-h"><span class="lm">1. Syarat: “sesiapa yang …”</span><span class="le">1. Conditional: “whoever …”</span></p>
+<div class="ay"><span class="v" lang="ar">… <span class="is">مَن</span> يَعۡمَلۡ سُوٓءٗا يُجۡزَ بِهِۦ …</span><span class="ref"><span class="nw">an-Nisā’</span> 4:123 <a class="tb-link" href="https://www.quranwordsattartil.com/an-nisa/101-126/#a123"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Sesiapa yang melakukan kejahatan, ia akan dibalas dengan kejahatan itu … (Basmeih)</span><span class="le">… Whoever does an evil deed will be repaid with that evil …</span></span></div>
+<p class="tb-h"><span class="lm">2. Soalan: “siapakah?”</span><span class="le">2. Question: “who?”</span></p>
+<div class="ay"><span class="v" lang="ar">… يَٰوَيۡلَنَا <span class="is">مَنۢ</span> بَعَثَنَا <span class="hf">مِن</span> مَّرۡقَدِنَاۜۗ …</span><span class="ref"><span class="nw">Yā Sīn</span> 36:52 <a class="tb-link" href="https://www.quranwordsattartil.com/yasin/#a52"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">… Aduhai celakanya kami! Siapakah yang membangkitkan kami dari kubur tempat tidur kami? … (Basmeih)</span><span class="le">… Oh, how wretched we are! Who has raised us from our graves, where we were sleeping? …</span></span></div>
+<p class="tb-tx muted"><span class="lm"><span class="our">Pemerhatian kami:</span> «man» (hijau) dan «min» (merah) berdekatan dalam ayat ini.</span><span class="le"><span class="our">Our observation:</span> «man» (green) and «min» (red) sit close together in this verse.</span></p>
+<p class="tb-h"><span class="lm">3. Penghubung: “yang, orang yang”</span><span class="le">3. Relative: “who, the one who”</span></p>
+<div class="ay"><span class="v" lang="ar">أَلَمۡ تَرَ أَنَّ ٱللَّهَ يَسۡجُدُۤ لَهُۥۤ <span class="is">مَن</span> فِي ٱلسَّمَٰوَٰتِ …</span><span class="ref"><span class="nw">al-Ḥajj</span> 22:18 <a class="tb-link" href="https://www.quranwordsattartil.com/al-hajj/#a18"><span class="lm">Baca ayat ›</span><span class="le">Read the verse ›</span></a></span><span class="tr"><span class="lm">Tidakkah engkau mengetahui bahawa segala yang ada di langit … (Basmeih)</span><span class="le">Have you not known that all that is in the heavens …</span></span></div>
+<p class="tb-h"><span class="lm">4. Kata nama umum yang disifatkan: “seseorang yang …”</span><span class="le">4. An indefinite noun with a description: “someone who …”</span></p>
+<p class="tb-tx"><span class="lm">Kata <span class="nw">Ibn Hishām</span>, sebab itu «rubba» (betapa ramai) boleh masuk padanya. Contohnya daripada syair.</span><span class="le"><span class="nw">Ibn Hishām</span> says that is why «rubba» (many a) can come before it. His example is from poetry.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَنَكِرَةٌ مَوْصُوفَةٌ وَلِهَذَا دَخَلَتْ عَلَيْهَا رُبَّ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/420" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 432 · Shamela ↗</a></p>
+</div>
+
+<!-- E. KHILAF -->
+<div class="card" id="khilaf">
+<h2><span class="lm">E. Pendapat yang diperselisihkan</span><span class="le">E. Disputed views</span></h2>
+<p class="tb-tx muted"><span class="lm">Pendapat di bawah dinukil seperti dalam sumber, tanpa kami pilih salah satunya. Khilaf masa (makna 1) ada di bahagian A.</span><span class="le">The views below are reported as in the sources; we do not choose between them. The dispute about time (meaning 1) is in part A.</span></p>
+
+<div class="mean kh">
+<h3><span class="no">E1</span><span class="lm">Adakah semua makna «min» kembali kepada “titik mula”?</span><span class="le">Do all the meanings of «min» go back to “starting point”?</span></h3>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Murādī</span>: kebanyakan ahli nahu tidak menerima semua makna ini. Mereka mentakwil banyak daripadanya dengan <i>taḍmīn</i> atau cara lain.</span><span class="le"><span class="nw">Al-Murādī</span>: most grammarians do not accept all these meanings. They explain many of them by <i>taḍmīn</i> or in other ways.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَلَمْ يُثْبِتْ أَكْثَرُ النَّحْوِيِّينَ لِـ مِنْ جَمِيعَ هَذِهِ الْمَعَانِي»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/297" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 315 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Mubarrad</span>, Ibn <span class="nw">as-Sarrāj</span>, <span class="nw">al-Akhfash</span> <span class="nw">al-Aṣghar</span>, <span class="nw">as-Suhaylī</span> dan sekumpulan ulama berpendapat «min» hanya untuk titik mula. Contoh beliau: “aku makan dari roti itu” bermaksud makan bermula pada bahagian pertamanya.</span><span class="le"><span class="nw">Al-Mubarrad</span>, Ibn <span class="nw">as-Sarrāj</span>, <span class="nw">al-Akhfash</span> <span class="nw">al-Aṣghar</span>, <span class="nw">as-Suhaylī</span> and a group of scholars hold that «min» is only for a starting point. His example: “I ate from the loaf” means the eating began at its first part.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«إِلَى أَنَّهَا لَا تَكُونُ إِلَّا لِابْتِدَاءِ الْغَايَةِ، وَأَنَّ سَائِرَ الْمَعَانِي الَّتِي ذَكَرُوهَا رَاجِعٌ إِلَى هَذَا الْمَعْنَى»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/297" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 315 · Shamela ↗</a></p>
+</div>
+
+<div class="mean kh">
+<h3><span class="no">E2</span><span class="lm">Bilakah «min» boleh menjadi tambahan?</span><span class="le">When can «min» be extra?</span></h3>
+<p class="tb-tx"><span class="lm">Sībawayh dan kebanyakan ulama Basrah: dengan dua syarat. Pertama, ayat sebelumnya bukan ayat positif (nafi, larangan atau soalan). Kedua, kata selepasnya kata nama umum (<i>nakirah</i>).</span><span class="le">Sībawayh and most Basrans: on two conditions. First, the sentence before it is not positive (a negation, a prohibition or a question). Second, the word after it is an indefinite noun (<i>nakirah</i>).</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَاعْلَمْ أَنَّ مِنْ لَا تُزَادُ عِنْدَ سِيبَوَيْهِ، وَجُمْهُورِ الْبَصْرِيِّينَ، إِلَّا بِشَرْطَيْنِ: الْأَوَّلُ: أَنْ يَكُونَ مَا قَبْلَهَا غَيْرَ مُوجَبٍ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/299" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 317 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> menambah syarat ketiga: kata itu pelaku, objek atau subjek ayat.</span><span class="le"><span class="nw">Ibn Hishām</span> adds a third condition: the word is the doer, the object or the subject of the sentence.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَالثَّالِثُ كَوْنُهُ فَاعِلًا أَوْ مَفْعُولًا بِهِ أَوْ مُبْتَدَأً»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/414" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 426 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm">Ulama Kufah: cukup satu syarat, iaitu kata selepasnya <i>nakirah</i>.</span><span class="le">The Kufans: one condition is enough, that the word after it is <i>nakirah</i>.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَذَهَبَ الْكُوفِيُّونَ إِلَى أَنَّهَا تُزَادُ، بِشَرْطٍ وَاحِدٍ، وَهُوَ تَنْكِيرُ مَجْرُورِهَا»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/300" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 318 · Shamela ↗</a></p>
+<p class="tb-tx"><span class="lm"><span class="nw">Al-Kisā’ī</span>, Hishām dan <span class="nw">al-Akhfash</span>: tanpa syarat langsung. <span class="nw">Ibn Mālik</span> juga berpendapat begitu; antara bukti yang dibawanya (dinukil <span class="nw">al-Murādī</span>) ialah <span class="nw">kata-kata</span> di bahagian C.</span><span class="le"><span class="nw">Al-Kisā’ī</span>, Hishām and <span class="nw">al-Akhfash</span>: with no condition at all. <span class="nw">Ibn Mālik</span> holds the same; among the proofs he brings (reported by <span class="nw">al-Murādī</span>) are the words in part C.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«لِأَنَّ الْكِسَائِيَّ وَهِشَامًا يَرَيَانِ زِيَادَتَهَا، بِلَا شَرْطٍ. وَهُوَ مَذْهَبُ أَبِي الْحَسَنِ الْأَخْفَشِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">al-Murādī</span>,</span><span class="le"><span class="nw">al-Murādī</span>,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span></i>, <a class="tb-link" href="https://shamela.ws/book/26099/300" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 318 · Shamela ↗</a></p>
+</div>
+
+<div class="mean kh">
+<h3><span class="no">E3</span><span class="lm">Adakah «min» bermakna “ganti”?</span><span class="le">Does «min» mean “instead of”?</span></h3>
+<p class="tb-tx"><span class="lm"><span class="nw">Ibn Hishām</span> menukil sekumpulan ulama yang menolaknya. Bagi mereka, makna “ganti” datang daripada kata yang tersembunyi (“sebagai ganti daripadanya”), dan «min» tetap untuk titik mula.</span><span class="le"><span class="nw">Ibn Hishām</span> reports a group who reject it. For them, the sense “instead of” comes from a hidden phrase (“as a replacement for it”), and «min» still marks a starting point.</span></p>
+<p class="tb-ar" lang="ar" dir="rtl">«وَأَنْكَرَ قَوْمٌ مَجِيءَ مِنْ لِلْبَدَلِ»</p>
+<p class="tb-src"><span class="lm"><span class="nw">Ibn Hishām</span>,</span><span class="le"><span class="nw">Ibn Hishām</span>,</span> <i>Mughnī <span class="nw">al-Labīb</span></i>, <a class="tb-link" href="https://shamela.ws/book/6972/411" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">p.</span> 423 · Shamela ↗</a></p>
+</div>
+</div>
+
+<!-- F. FURTHER READING -->
+<div class="card" id="rujukan">
+<h2><span class="lm">F. Rujukan lanjut</span><span class="le">F. Further reading</span></h2>
+<ul class="tb-tx">
+<li><span class="nw">al-Murādī,</span> <i><span class="nw">al-Janā</span> <span class="nw">ad-Dānī</span> fī Ḥurūf <span class="nw">al-Ma‘ānī</span></i>, <span class="lm">bab «min»,</span><span class="le">entry «min»,</span> <a class="tb-link" href="https://shamela.ws/book/26099/290" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">pp.</span> 308–321 · Shamela ↗</a></li>
+<li><span class="nw">Ibn Hishām</span>, <i>Mughnī <span class="nw">al-Labīb</span> ‘an Kutub <span class="nw">al-A‘ārīb</span></i>, <span class="lm">bab «min» dan «man»,</span><span class="le">entries «min» and «man»,</span> <a class="tb-link" href="https://shamela.ws/book/6972/407" target="_blank" rel="noopener"><span class="lm">h.</span><span class="le">pp.</span> 419–432 · Shamela ↗</a></li>
+<li><span class="nw">az-Zamakhsharī,</span> <i><span class="nw">al-Kashshāf</span></i>, <span class="lm">tafsir Ibrāhīm 14:10,</span><span class="le">on Ibrāhīm 14:10,</span> <a class="tb-link" href="https://shamela.ws/book/23627/1242" target="_blank" rel="noopener">2/543 · Shamela ↗</a></li>
+<li><span class="nw">Ibn ‘Āshūr</span>, <i><span class="nw">at-Taḥrīr</span> wa <span class="nw">at-Tanwīr</span></i>, <span class="lm">tafsir Nūḥ 71:4,</span><span class="le">on Nūḥ 71:4,</span> <a class="tb-link" href="https://shamela.ws/book/9776/10170" target="_blank" rel="noopener">29/189 · Shamela ↗</a></li>
+<li><span class="lm">Muḥammad Ḥasan <span class="nw">al-Sharīf</span>, <i>Mu‘jam Ḥurūf <span class="nw">al-Ma‘ānī</span> fī <span class="nw">al-Qur’ān</span> <span class="nw">al-Karīm</span></i> (Beirut: Mu’assasat <span class="nw">al-Risālah</span>, 1996), h. 1040–1042 (cetakan; tiada di Shamela). Beliau berkata makna asal «min» ialah titik mula, dan makna lain lahir daripada konteks. Tiga makna menjadi asas: titik mula, sebahagian dan menerangkan jenis. Beliau menyenaraikan setiap «min» dalam <span class="nw">al-Qur’an</span> mengikut susunan mushaf, dengan kod makna. Beliau menambah makna “lebih daripada” (<i>tafḍīl</i>) dan keadaan (<i>ḥāl</i>), tetapi tidak menyenaraikan <i>faṣl</i>, “seperti «bā’»”, <i>ghāyah</i>, <i>intihā’</i>, «rubbamā» dan sumpah.</span><span class="le">Muḥammad Ḥasan <span class="nw">al-Sharīf</span>, <i>Mu‘jam Ḥurūf <span class="nw">al-Ma‘ānī</span> fī <span class="nw">al-Qur’ān</span> <span class="nw">al-Karīm</span></i> (Beirut: Mu’assasat <span class="nw">al-Risālah</span>, 1996), pp. 1040–1042 (print; not in Shamela). He says the basic meaning of «min» is the starting point, and the other meanings arise from context. Three meanings are the base: starting point, “some of” and explaining the kind. He lists every «min» in the Qur’an in mushaf order, coded by meaning. He adds “more than” (<i>tafḍīl</i>) and state (<i>ḥāl</i>), but does not list <i>faṣl</i>, “like «bā’»”, <i>ghāyah</i>, <i>intihā’</i>, «rubbamā» or the oath.</span></li>
+</ul>
+</div>
+<footer><span class="lm">AtTartil Quranic Institute, Singapura · Disusun oleh Ustaz Zulkiflee Bachik</span><span class="le">AtTartil Quranic Institute, Singapore · Compiled by Ustaz Zulkiflee Bachik</span></footer>
+</div></div>
+<script>try{if(localStorage.getItem('yq-lang2')==='en')document.getElementById('lg-en').checked=true;document.querySelectorAll('input[name=lg]').forEach(function(e){e.addEventListener('change',function(){try{localStorage.setItem('yq-lang2',document.getElementById('lg-en').checked?'en':'ms')}catch(x){}})})}catch(e){}</script>
+</body>
+</html>
+
