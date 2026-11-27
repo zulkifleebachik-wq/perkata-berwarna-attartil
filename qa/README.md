@@ -11,12 +11,12 @@ python3 qa/faail.py                      # 0 RALAT
 Semak satu halaman: `python3 qa/ligatur.py semak al-insan/index.html` · `python3 qa/faail.py al-insan/index.html`
 
 ## 1. `qa/ligatur.py` — warna huruf bercantum
-> ⚠️ **27 Nov 2026:** mod `baiki` DIGANTUNG — tindanan `.cw/.cwo` bertindih di iPhone Safari (lulus di Chrome). Tindanan diundur dari laman. Sebarang kaedah tindanan baharu **wajib diuji pada iPhone sebenar** (halaman `/ujian-iphone-warna/`) sebelum terbit. Sementara itu `semak` akan melaporkan perkataan lām-alif sebagai belum dibaiki.
+> **Kaedah B (lulus iPhone Safari, 27 Nov 2026):** lapisan `.cwo` mestilah SALINAN span berwarna yang sama (bukan teks tunggal / `::before`) — jika struktur berbeza, Safari menyusun huruf berbeza dan perkataan kelihatan berganda. Kaedah baharu **wajib diuji pada iPhone sebenar** sebelum terbit.
 
 Fon KFGQPC Hafs (tidak diubah, lesen KFGQPC) melukis lām+alif (ٱلۡأ, لِأ, لَا…), hamzah atas tatwil (بِـَٔا…)
 dan perkataan sajdah sebagai satu glif / kepingan. Safari mewarnakan seluruh glif satu warna; Chrome memotong di tempat salah.
 - `semak` melaporkan setiap perkataan berbilang warna yang glifnya merentas sempadan warna dan belum dibaiki.
-- `baiki <halaman>` menambah tindanan warna (`.cw` + `.cwo[data-t]`, aria-hidden, teks melalui `::before`):
+- `baiki <halaman>` menambah tindanan warna (`.cw` + `.cwo` = salinan span yang sama, aria-hidden):
   ٱ + batang lām + jazm/baris lām ikut warna lām; alif + hamzah/madd ikut kata selepasnya. Rupa mushaf tidak berubah.
 - Perkataan **sajdah** (ۤ) hanya dilaporkan — baiki dengan kaedah `.sjw` (D-033 option C) dan semak visual.
 - Perkataan `.ar.lf` (fon LF: «لِلَّهِ», «بِسۡمِ») sudah dikira dibaiki.
