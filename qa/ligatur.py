@@ -8,7 +8,8 @@ satu warna; Chrome memotong di tempat salah. Alat ini:
   python3 qa/ligatur.py semak [halaman.html ...]   # semak (lalai: semua halaman); kod keluar 1 jika ada masalah
   python3 qa/ligatur.py baiki halaman.html [...]   # tambah tindanan warna (.cw/.cwo) pada perkataan yang belum dibaiki
 
-Tindanan: warna asal dikekalkan; lapisan aria-hidden (teks melalui data-t + ::before) mewarnakan semula
+Tindanan (kaedah B, lulus iPhone Safari 27 Nov 2026): warna asal dikekalkan; lapisan aria-hidden = SALINAN span yang sama
+(struktur mesti sama, jika tidak Safari menyusun huruf berbeza → bertindih) mewarnakan semula
 kawasan bercantum sahaja, dipotong pada batang lām (dikesan dari bentuk glif). Rupa mushaf tidak berubah.
 Perkataan sajdah (ۤ) dilaporkan sahaja — guna kaedah .sjw (D-033 option C).
 Keperluan: pip install uharfbuzz fonttools
@@ -260,7 +261,7 @@ def markup2(inner_html,text,items,tot):
             _,x0,y0,x1,y1,c=it; X0=100*x0/tot; X1=100*x1/tot
             T=f'calc(var(--bl) - {y1/UPEM:.3f}em)'; B=f'calc(var(--bl) - {y0/UPEM:.3f}em)'
             pts=f'{X0:.1f}% {T},{X1:.1f}% {T},{X1:.1f}% {B},{X0:.1f}% {B}'
-        ov+=f'<span class="cwo {c}" aria-hidden="true" data-t="{html.escape(text,quote=False)}" style="clip-path:polygon({pts})"></span>'
+        ov+=f'<span class="cwo {c}" aria-hidden="true" style="clip-path:polygon({pts})">{inner_html}</span>'
     return f'<span class="cw">{inner_html}{ov}</span>'
 
 
@@ -270,7 +271,7 @@ FAAR=re.compile(r'(<span class="faar( lf)?" lang="ar" dir="rtl">)(.*?)(</span>)(
 SEG=re.compile(r'<span class="([pnv])">([^<]*)</span>')
 CSS=(".cw{position:relative;display:inline-block;white-space:nowrap}.ar .cw{line-height:2;--bl:1.293em}"
      ".faar .cw{line-height:1.3;--bl:0.943em}.cwo{position:absolute;top:0;right:0;white-space:nowrap;pointer-events:none;"
-     "-webkit-user-select:none;user-select:none}.cwo::before,.sjo::before{content:attr(data-t)}")
+     "-webkit-user-select:none;user-select:none}.cwo .p,.cwo .n,.cwo .v{color:inherit!important}.sjo::before{content:attr(data-t)}")
 KF=".ar{font-family:'KFGQPC Hafs'"
 def words_in(inner):
     """split an .ar/.faar inner html into words: [(raw_html, segs)]; covered words (cw/sjw/lsj) marked None"""
@@ -310,14 +311,11 @@ def scan(path,fix=False):
     def faar(m): return m.group(1)+handle(m.group(3),'kurungan fā‘il',bool(m.group(2)))+m.group(4)
     n=CARD.sub(card,s); n=FAAR.sub(faar,n)
     if fix and changed:
-        if '.cwo::before' not in n: n=n.replace('</style>',CSS+'</style>',1)
+        if '.cwo .p,.cwo .n' not in n: n=n.replace('</style>',CSS+'</style>',1)
         open(path,'w',encoding='utf-8').write(n)
     return probs,changed
 def main():
     if len(sys.argv)<2 or sys.argv[1] not in ('semak','baiki'): print(__doc__); sys.exit(2)
-    if sys.argv[1]=='baiki':
-        print('DIGANTUNG (27 Nov 2026): tindanan .cw/.cwo bertindih (double vision) di iPhone Safari. '
-              'Jangan guna sehingga kaedah yang lulus ujian /ujian-iphone-warna/ di iPhone dipilih.'); sys.exit(3)
     mode=sys.argv[1]; files=sys.argv[2:] or sorted(glob.glob(os.path.join(ROOT,'**','index.html'),recursive=True))
     total=0
     for f in files:
